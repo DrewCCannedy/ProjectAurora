@@ -19,7 +19,7 @@
 if you get an error when you use `git push`, just run the command that git bash tells you to run and then run `git push` again
 
 ### Other useful commands
-`git pull` will update your computer with changes that are posted on github
-`git status` will tell you what you have changed vs the master file on github
-`git checkout master` will return you to the master branch (DONT PUSH TO THE MASTER BRANCH) 
-You will have to checkout to the master branch to use `git pull`, so checkout to the master to update
+- `git pull` will update your computer with changes that are posted on github
+- `git status` will tell you what you have changed vs the master file on github
+- `git checkout master` will return you to the master branch (DONT PUSH TO THE MASTER BRANCH) 
+- You will have to checkout to the master branch to use `git pull`, so checkout to the master to update
