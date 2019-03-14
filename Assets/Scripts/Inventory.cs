@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     public bool hasRdrive, hasGdrive, hasBdrive, hasYdrive;
 
     public bool inventoryMode;
+    public GameObject cursor;
 
     public GameObject inventoryPanel;
     public GameObject spacesuitButton;
@@ -53,11 +54,14 @@ public class Inventory : MonoBehaviour
         if (inventoryMode == true) //Toggling the inventory panel on and off
         {
             inventoryPanel.SetActive(true);
+            //cursor.SetActive(true);
+            //cursor.transform.position = Input.mousePosition;
         }
 
         if (inventoryMode == false)
         {
             inventoryPanel.SetActive(false);
+            //cursor.SetActive(false);
         }
 
 
