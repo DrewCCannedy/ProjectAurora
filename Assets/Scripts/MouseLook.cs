@@ -21,6 +21,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Quaternion m_CameraTargetRot;
         private bool m_cursorIsLocked = true;
 
+        GameObject player;
+
+        void Start ()
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+
         public void Init(Transform character, Transform camera)
         {
             m_CharacterTargetRot = character.localRotation;
@@ -93,6 +100,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
+
         }
 
         Quaternion ClampRotationAroundXAxis(Quaternion q)

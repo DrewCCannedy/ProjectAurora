@@ -28,8 +28,8 @@ public class Interaction : MonoBehaviour
             if (objectHit.collider.gameObject.tag == ("Power") && Input.GetMouseButtonDown(0)) //Interaction with backup generator in bridge
             {
                 Debug.Log("Interacted with " + objectHit.collider.gameObject.name + ".");
-                player.GetComponent<Inventory>().inventoryMode = true;
-                //generator.GetComponent<Generator>().PlugWires();
+                //player.GetComponent<Inventory>().inventoryMode = true;
+                generator.GetComponent<Generator>().PlugWires();
             }
 
             if (objectHit.collider.gameObject.tag == ("Cockpit") && Input.GetMouseButtonDown(0)) //Interaction with cockpit terminal in bridge

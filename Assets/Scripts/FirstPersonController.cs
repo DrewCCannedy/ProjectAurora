@@ -254,6 +254,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (player.GetComponent<Inventory>().inventoryMode == false)
             {
                 m_MouseLook.LookRotation(transform, m_Camera.transform);
+                m_MouseLook.lockCursor = true;
+            }
+
+            if (player.GetComponent<Inventory>().inventoryMode == true)
+            {
+                m_MouseLook.lockCursor = false;
             }
         }
 
