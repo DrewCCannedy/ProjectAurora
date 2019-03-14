@@ -28,13 +28,14 @@ public class Generator : MonoBehaviour
             powerOn = true;
             //Debug.Log("Ship power online.");
         }
+
     }
 
     public void PlugWires()
     {
         if ((player.GetComponent<Inventory>().hasRwire == true) && (Input.GetMouseButtonDown(0)))
         {
-            Instantiate(redWire, new Vector3(32.8f, 1, 10.3f), Quaternion.Euler(new Vector3(90, 0, 90)));
+            Instantiate(redWire, new Vector3(32.77f, -0.24f, 11.67f), Quaternion.Euler(new Vector3(90, 0, -90)));
             wiresPlugged = wiresPlugged + 1;
             Debug.Log("wiresPlugged = " + wiresPlugged);
             player.GetComponent<Inventory>().hasRwire = false;
@@ -42,7 +43,7 @@ public class Generator : MonoBehaviour
 
         else if ((player.GetComponent<Inventory>().hasGwire == true) && (Input.GetMouseButtonDown(0)))
         {
-            Instantiate(greenWire, new Vector3(32.8f, 1, 10.1f), Quaternion.Euler(new Vector3(90, 0, 90)));
+            Instantiate(greenWire, new Vector3(32.9f, -0.15f, 11.75f), Quaternion.Euler(new Vector3(90, -180, 90)));
             wiresPlugged = wiresPlugged + 1;
             Debug.Log("wiresPlugged = " + wiresPlugged);
             player.GetComponent<Inventory>().hasGwire = false;
@@ -50,7 +51,7 @@ public class Generator : MonoBehaviour
 
         else if ((player.GetComponent<Inventory>().hasBwire == true) && (Input.GetMouseButtonDown(0)))
         {
-            Instantiate(blueWire, new Vector3(32.8f, 1, 9.9f), Quaternion.Euler(new Vector3(90, 0, 90)));
+            Instantiate(blueWire, new Vector3(32.6f, -0.3f, 11.6f), Quaternion.Euler(new Vector3(90, 180, 90)));
             wiresPlugged = wiresPlugged + 1;
             Debug.Log("wiresPlugged = " + wiresPlugged);
             player.GetComponent<Inventory>().hasBwire = false;
@@ -58,7 +59,7 @@ public class Generator : MonoBehaviour
 
         else if ((player.GetComponent<Inventory>().hasYwire == true) && (Input.GetMouseButtonDown(0)))
         {
-            Instantiate(yellowWire, new Vector3(32.8f, 1, 9.7f), Quaternion.Euler(new Vector3(90, 0, 90)));
+            Instantiate(yellowWire, new Vector3(32.9f, -0.4f, 11.7f), Quaternion.Euler(new Vector3(90, -180, -90)));
             wiresPlugged = wiresPlugged + 1;
             Debug.Log("wiresPlugged = " + wiresPlugged);
             player.GetComponent<Inventory>().hasYwire = false;
