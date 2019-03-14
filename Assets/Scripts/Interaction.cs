@@ -6,6 +6,7 @@ public class Interaction : MonoBehaviour
 {
 
     public float sightDist;
+    public SubtitleSystem subtitleSystem;
     RaycastHit objectHit;
     GameObject player;
     GameObject generator;
@@ -52,6 +53,10 @@ public class Interaction : MonoBehaviour
                 {
                     Debug.Log("Picked up Spacesuit.");
                     player.GetComponent<Inventory>().hasSpacesuit = true;
+                    
+                    // play space suit AI subtitles
+                    subtitleSystem.SetPlaySpaceSuit(true);
+
                     Destroy(objectHit.collider.gameObject);
                 }
 
