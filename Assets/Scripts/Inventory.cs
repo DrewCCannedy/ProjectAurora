@@ -54,14 +54,14 @@ public class Inventory : MonoBehaviour
         if (inventoryMode == true) //Toggling the inventory panel on and off
         {
             inventoryPanel.SetActive(true);
-            //cursor.SetActive(true);
-            //cursor.transform.position = Input.mousePosition;
+            cursor.SetActive(true);
+            cursor.transform.position = Input.mousePosition;
         }
 
         if (inventoryMode == false)
         {
             inventoryPanel.SetActive(false);
-            //cursor.SetActive(false);
+            cursor.SetActive(false);
         }
 
 
