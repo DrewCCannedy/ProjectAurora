@@ -9,6 +9,9 @@
 - `git commit -m '<summary of the changes>'` commit changes
 - `git push` push your changes to github
 - alert me, I will attempt to merge your changes into the project
+- `git checkout master` return to the master branch
+- `git pull` get new changes from people if there are any
+- `git branch -d '<name of your branch>'` delete your branch
 
 ### Example of adding something new 
 1. `cd Project Aurora`
