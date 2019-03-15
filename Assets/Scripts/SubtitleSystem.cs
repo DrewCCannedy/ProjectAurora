@@ -27,7 +27,10 @@ public class SubtitleSystem : MonoBehaviour
 
     // section variables
     private bool playIntro = true;
-    private bool playSpaceSuit = false;
+    public bool playFlashLight = true;
+    public bool playSpaceSuit = false;
+    public bool playBridge = false; 
+    public bool playBridgeOnce = true;
 
     // Start is called before the first frame update
     void Start()
@@ -44,9 +47,6 @@ public class SubtitleSystem : MonoBehaviour
         subtitles.Add("AI: I got bored while you were asleep and turned off auto pilot,");
         subtitles.Add("AI: but turns out a disembodied intercom system can’t pilot the ship.");
         subtitles.Add("AI: We've struck an asteroid and you’re going to have to upload your research and get to an escape pod.");
-        // subtitles.Add("AI: I believe you left your flashlight on your desk.");
-        // subtitles.Add("AI: You never clean up after yourself.");
-        // subtitles.Add("AI: You’ll need it. The power’s out and I know you’re afraid of the dark.");
         subtitleSections.Add(subtitles);
 
         // SpaceSuit Text [1]
@@ -58,6 +58,20 @@ public class SubtitleSystem : MonoBehaviour
         subtitles.Add("AI: Nice knowing you, Captain.");
         // subtitles.Add("AI: Since the door systems are offline you’re gonna have to use the manual lever.");
         subtitleSections.Add(subtitles);
+
+        // FlashLight Text [2]
+        subtitles = new List<string>();
+        subtitles.Add("AI: I'm pretty sure you left your light on your desk since you never clean up after yourself.");
+        subtitles.Add("AI: You’ll need it. The power’s out and I know you’re afraid of the dark.");
+        subtitleSections.Add(subtitles);
+
+        // Bridge Text [3]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Looks like the power’s out.");
+        subtitles.Add("AI: You’re a smart girl, I’m sure you can get that backup generator running.");
+        subtitles.Add("AI: Well, you have to otherwise we’re stranded.");
+        subtitles.Add("AI: Your workbench should have the cables you need to connect it.");
+        subtitleSections.Add(subtitles);
     }
 
     // Update is called once per frame
@@ -65,13 +79,18 @@ public class SubtitleSystem : MonoBehaviour
     {
         if (playIntro) {
             playIntro = PlayAudioSection(0);
+        } else if (playFlashLight && Time.time > 18f) {
+            playFlashLight = PlayAudioSection(2);
         } else if (playSpaceSuit) {
             playSpaceSuit = PlayAudioSection(1);
+        } else if (playBridge) {
+            playBridge = PlayAudioSection(3);
         } else {
             text.text = "";
         }
     }
 
+    // plays audio with subtitles
     bool PlayAudioSection(int section) {
         if (!audioSource.isPlaying) {
             // if all clips are played, move on
@@ -109,9 +128,5 @@ public class SubtitleSystem : MonoBehaviour
         }
         frameCount++;
         return true;
-    }
-
-    public void SetPlaySpaceSuit(bool foo) {
-        playSpaceSuit = foo;
     }
 }

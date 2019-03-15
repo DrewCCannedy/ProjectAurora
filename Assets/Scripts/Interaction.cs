@@ -23,6 +23,12 @@ public class Interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // play bridge subtitle when near bridge
+        if (transform.position.x >= 24f && subtitleSystem.playBridgeOnce) {
+           subtitleSystem.playBridgeOnce = false;
+            subtitleSystem.playBridge = true;
+        }
+
         Debug.DrawRay(this.transform.position, this.transform.forward * sightDist, Color.magenta); //Checks for interactable objects by drawing a ray in front of the player
         if (Physics.Raycast(this.transform.position, this.transform.forward, out objectHit, sightDist))
         {
@@ -54,8 +60,8 @@ public class Interaction : MonoBehaviour
                     Debug.Log("Picked up Spacesuit.");
                     player.GetComponent<Inventory>().hasSpacesuit = true;
                     
-                    // play space suit AI subtitles
-                    subtitleSystem.SetPlaySpaceSuit(true);
+                    // play space suit AI audio
+                    subtitleSystem.playSpaceSuit = true;
 
                     Destroy(objectHit.collider.gameObject);
                 }
@@ -64,6 +70,12 @@ public class Interaction : MonoBehaviour
                 {
                     Debug.Log("Picked up Flashlight.");
                     player.GetComponent<Inventory>().hasFlashlight = true;
+
+                    // dont play flashlight AI audio
+                    if (Time.time <= 18f) {
+                        subtitleSystem.playFlashLight = false;
+                    }
+
                     Destroy(objectHit.collider.gameObject);
                 }
 
