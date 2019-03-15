@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6468583533565346596}
   m_Layer: 0
   m_Name: BlueWire
-  m_TagString: Pickup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

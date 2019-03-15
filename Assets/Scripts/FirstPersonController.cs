@@ -251,15 +251,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
+
+
             if (player.GetComponent<Inventory>().inventoryMode == false)
             {
+                m_MouseLook.SetCursorLock(true);
                 m_MouseLook.LookRotation(transform, m_Camera.transform);
-                m_MouseLook.lockCursor = true;
+                //m_MouseLook.lockCursor = true;
             }
 
             if (player.GetComponent<Inventory>().inventoryMode == true)
             {
-                m_MouseLook.lockCursor = false;
+                m_MouseLook.SetCursorLock(false);
+                //m_MouseLook.lockCursor = false;
             }
         }
 
