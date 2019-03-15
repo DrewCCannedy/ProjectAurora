@@ -12597,11 +12597,14 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 3b021cc84a2744943a61da61934f0b3d, type: 3}
     - {fileID: 8300000, guid: 4fc2e36f152d6764789b86e442032ea7, type: 3}
     - {fileID: 8300000, guid: 01beb9382ea34d9458d77fa6e9407834, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: b3fe437734169984280d78b76e001f00, type: 3}
   audioSource: {fileID: 1540009050}
   playFlashLight: 1
   playSpaceSuit: 0
   playBridge: 0
   playBridgeOnce: 1
+  playGreenWire: 0
 --- !u!1001 &1404281261
 PrefabInstance:
   m_ObjectHideFlags: 0
