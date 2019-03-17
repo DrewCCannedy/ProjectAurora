@@ -4483,7 +4483,7 @@ RectTransform:
   m_GameObject: {fileID: 523145879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -532.1229}
-  m_LocalScale: {x: 0.92472, y: 0.10839, z: 1}
+  m_LocalScale: {x: 1.4501679, y: 0.10839, z: 1}
   m_Children: []
   m_Father: {fileID: 1403774167}
   m_RootOrder: 0
@@ -9890,7 +9890,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -12955,7 +12955,7 @@ GameObject:
   - component: {fileID: 1403774167}
   - component: {fileID: 1403774168}
   m_Layer: 0
-  m_Name: Subtitles
+  m_Name: AI Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12969,7 +12969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403774166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 116.490295, y: 60.570465, z: 532.1229}
+  m_LocalPosition: {x: 116.490295, y: -24, z: 532.1229}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 523145880}
@@ -12989,6 +12989,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16991d452c7c7ea4fa6a461db8809bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClips:
+  - clips:
+    - {fileID: 8300000, guid: 3bab8e08fbfa9ed4dafba104a4dabeaf, type: 3}
+    - {fileID: 8300000, guid: 58d8478bd9fc8c14aaa56ed89faff556, type: 3}
+    - {fileID: 8300000, guid: 644df6a5c707e824cbc59064c9f1259a, type: 3}
+    - {fileID: 8300000, guid: 0619aa746c5828749bc0e6169f64db94, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: 973d8e972e47b474f93e01e50315889e, type: 3}
+    - {fileID: 8300000, guid: 66dac6216b7764048b646710fabd9434, type: 3}
+    - {fileID: 8300000, guid: a623793152d06a344bd1f9438c4424a4, type: 3}
+    - {fileID: 8300000, guid: 55f7ff44c9b58854fbce013c9d8abedf, type: 3}
+    - {fileID: 8300000, guid: e5aea6360f12ca844b2d88f93dbf1c57, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: 78cf7ef8b6c7f9f4a9e7bc051508740f, type: 3}
+    - {fileID: 8300000, guid: 3cc341859ae9ac842b4bb9b40e1a72cf, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: 450856b6b8c76844cb117ccea7e09b14, type: 3}
+    - {fileID: 8300000, guid: 3b021cc84a2744943a61da61934f0b3d, type: 3}
+    - {fileID: 8300000, guid: 4fc2e36f152d6764789b86e442032ea7, type: 3}
+    - {fileID: 8300000, guid: 01beb9382ea34d9458d77fa6e9407834, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: b3fe437734169984280d78b76e001f00, type: 3}
+  audioSource: {fileID: 1540009050}
+  playFlashLight: 1
+  playSpaceSuit: 0
+  playBridge: 0
+  playBridgeOnce: 1
+  playGreenWire: 0
 --- !u!1001 &1404281261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14057,6 +14085,12 @@ MonoBehaviour:
   gdriveButton: {fileID: 714427780}
   bdriveButton: {fileID: 507506199}
   ydriveButton: {fileID: 497942322}
+--- !u!82 &1540009050 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 499378827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1553199228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e2eae9732b6f2d746a76e0d444ddd62c,
