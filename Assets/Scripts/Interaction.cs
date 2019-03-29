@@ -12,6 +12,8 @@ public class Interaction : MonoBehaviour
     GameObject player;
     GameObject generator;
     GameObject cockpit;
+    // door sound, written by drew
+    public AudioClip doorOpen;
     
     // Start is called before the first frame update
     void Start()
@@ -57,6 +59,9 @@ public class Interaction : MonoBehaviour
                         // open door, run door animation
                         Debug.Log("Opened " + objectHit.collider.gameObject.name + ".");
                         objectHit.collider.gameObject.GetComponent<Animator>().SetTrigger("open");
+                        transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(doorOpen);
+                    } else {
+                        subtitleSystem.playDoorHint = true;
                     }
                 } catch (Exception e) { // this runs if there is no door script on the door. Just deletes the door
                     Destroy(objectHit.collider.gameObject);

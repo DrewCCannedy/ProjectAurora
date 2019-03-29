@@ -34,6 +34,7 @@ public class SubtitleSystem : MonoBehaviour
     // this makes sure the bridge audio only plays once, since its based on player location
     public bool playBridgeOnce = true;
     public bool playGreenWire = false;
+    public bool playDoorHint = false;
 
     // Start is called before the first frame update
     void Start()
@@ -80,6 +81,13 @@ public class SubtitleSystem : MonoBehaviour
         subtitles = new List<string>();
         subtitles.Add("AI: And the green wire’s missing! What luck! You’re in for a real treat if you don’t have another somewhere.");
         subtitleSections.Add(subtitles);
+
+        // Door Hint Text [5]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Oh, one more important thing I forgot to mention.");
+        subtitles.Add("AI: There’s a breach in the bridge and oxygen levels are plummeting.");
+        subtitles.Add("AI: You’re dead meat if you don’t put your suit on.");
+        subtitleSections.Add(subtitles);
     }
 
     // Update is called once per frame
@@ -89,6 +97,8 @@ public class SubtitleSystem : MonoBehaviour
             playIntro = PlayAudioSection(0);
         } else if (playFlashLight && Time.time > 18f) {
             playFlashLight = PlayAudioSection(2);
+        } else if (playDoorHint && !playFlashLight) {
+            playDoorHint = PlaySubtitleSection(5);
         } else if (playSpaceSuit) {
             playSpaceSuit = PlayAudioSection(1);
         } else if (playBridge) {
