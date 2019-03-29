@@ -9,12 +9,16 @@ public class TurnLightsOnWhenPowerOn : MonoBehaviour
     bool lightsOn = false;
     public GameObject[] doorLights;
     public Material doorLightOn;
+    public GameObject[] probes;
 
     // Start is called before the first frame update
     void Start()
     {
         foreach (Transform child in transform) {
             child.GetComponent<Light>().enabled = false;
+        }
+        foreach (GameObject probe in probes) {
+                probe.GetComponent<ReflectionProbe>().enabled = false;
         }
     }
 
@@ -27,6 +31,9 @@ public class TurnLightsOnWhenPowerOn : MonoBehaviour
             }
             foreach (GameObject light in doorLights) {
                 light.GetComponent<MeshRenderer>().material = doorLightOn;
+            }
+            foreach (GameObject probe in probes) {
+                probe.GetComponent<ReflectionProbe>().enabled = true;
             }
             lightsOn = true;
         }
