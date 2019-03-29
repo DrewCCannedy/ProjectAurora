@@ -39,6 +39,12 @@ public class Interaction : MonoBehaviour
             subtitleSystem.playBridge = true;
         }
 
+        // play green wire sounds
+        if (wiresFound == 3) {
+            subtitleSystem.playGreenWire = true;
+            wiresFound++;
+        }
+
         Debug.DrawRay(this.transform.position, this.transform.forward * sightDist, Color.magenta); //Checks for interactable objects by drawing a ray in front of the player
         if (Physics.Raycast(this.transform.position, this.transform.forward, out objectHit, sightDist))
         {
