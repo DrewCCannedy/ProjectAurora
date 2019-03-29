@@ -9,9 +9,7 @@
 - `git commit -m '<summary of the changes>'` commit changes
 - `git push` push your changes to github
 - alert me, I will attempt to merge your changes into the project
-- `git checkout master` return to the master branch
-- `git pull` get new changes from people if there are any
-- `git branch -d '<name of your branch>'` delete your branch
+- `git pull origin master` get new changes from people if there are any
 
 ### Example of adding something new 
 1. `cd Project Aurora`
@@ -22,7 +20,4 @@
 if you get an error when you use `git push`, just run the command that git bash tells you to run and then run `git push` again
 
 ### Other useful commands
-- `git pull` will update your computer with changes that are posted on github
 - `git status` will tell you what you have changed vs the master file on github
-- `git checkout master` will return you to the master branch (DONT PUSH TO THE MASTER BRANCH) 
-- You will have to checkout to the master branch to use `git pull`, so checkout to the master to update
