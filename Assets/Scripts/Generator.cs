@@ -6,6 +6,7 @@ public class Generator : MonoBehaviour
 {
 
     GameObject player;
+    public SubtitleSystem subSystem;
     int wiresPlugged = 0;
     public Interaction interaction;
     public GameObject redWire;
@@ -31,7 +32,9 @@ public class Generator : MonoBehaviour
         if (wiresPlugged == 4)
         {
             interaction.powerOn = true;
+            subSystem.playPowerOn = true;
             Debug.Log("Ship power online.");
+            wiresPlugged++;
         }
 
     }

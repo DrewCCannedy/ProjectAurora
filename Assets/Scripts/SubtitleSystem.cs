@@ -35,6 +35,7 @@ public class SubtitleSystem : MonoBehaviour
     public bool playBridgeOnce = true;
     public bool playGreenWire = false;
     public bool playDoorHint = false;
+    public bool playPowerOn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +89,16 @@ public class SubtitleSystem : MonoBehaviour
         subtitles.Add("AI: There’s a breach in the bridge and oxygen levels are plummeting.");
         subtitles.Add("AI: You’re dead meat if you don’t put your suit on.");
         subtitleSections.Add(subtitles);
+
+        // Power On Text [6]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Backup generator connected. Main power is now online. Congratulations…");
+        subtitles.Add("AI: Make sure to send out your research data before you go.");
+        subtitles.Add("AI: Your boss wouldn’t be happy if you came back empty-handed.");
+        subtitles.Add("AI: Didn’t you disconnect your terminal in order to turn on the generator?");
+        subtitles.Add("AI: Well, looks like someone’s getting fired. Sucks.");
+        subtitles.Add("AI: You know… you could just take out the hard drive and hook it up to the bridge terminal instead.");
+        subtitleSections.Add(subtitles);
     }
 
     // Update is called once per frame
@@ -105,6 +116,8 @@ public class SubtitleSystem : MonoBehaviour
             playBridge = PlayAudioSection(3);
         } else if (playGreenWire) {
             playGreenWire = PlayAudioSection(4);
+        } else if (playPowerOn) {
+            playPowerOn = PlayAudioSection(6);
         } else {
             text.text = "";
         }

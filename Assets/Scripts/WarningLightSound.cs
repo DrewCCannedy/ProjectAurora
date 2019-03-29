@@ -18,7 +18,7 @@ public class WarningLightSound : MonoBehaviour
     {
         while(true) {
             source.PlayOneShot(clip);
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(7);
         }
     }
 }
