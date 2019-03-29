@@ -12,6 +12,7 @@ public class Interaction : MonoBehaviour
     GameObject player;
     GameObject generator;
     GameObject cockpit;
+    public GameObject flashlight;
     // door sound, written by drew
     public AudioClip doorOpen;
     
@@ -87,7 +88,8 @@ public class Interaction : MonoBehaviour
                 {
                     Debug.Log("Picked up Flashlight.");
                     player.GetComponent<Inventory>().hasFlashlight = true;
-
+                    // created by drew
+                    flashlight.SetActive(true);
                     // dont play flashlight AI audio
                     if (Time.time <= 18f) {
                         subtitleSystem.playFlashLight = false;
