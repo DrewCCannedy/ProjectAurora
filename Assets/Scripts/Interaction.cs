@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Interaction : MonoBehaviour
 {
@@ -47,8 +48,19 @@ public class Interaction : MonoBehaviour
 
             if (objectHit.collider.gameObject.tag == ("Door") && Input.GetMouseButtonDown(0)) //Doors will either be moved or destroyed upon interaction
             {
-                Debug.Log("Opened " + objectHit.collider.gameObject.name + ".");
-                Destroy(objectHit.collider.gameObject);
+                // created by drew
+                // try and get door component
+                BedroomDoor door = objectHit.collider.gameObject.GetComponent<BedroomDoor>();
+                try {
+                    // if player has flashlight and spacesuit
+                    if (door.canOpen) {
+                        // open door, run door animation
+                        Debug.Log("Opened " + objectHit.collider.gameObject.name + ".");
+                        objectHit.collider.gameObject.GetComponent<Animator>().SetTrigger("open");
+                    }
+                } catch (Exception e) { // this runs if there is no door script on the door. Just deletes the door
+                    Destroy(objectHit.collider.gameObject);
+                }
             }
 
             if (objectHit.collider.gameObject.tag == ("Pickup") && Input.GetMouseButtonDown(0)) //Pickups will be destroyed and placed into inventory upon interaction

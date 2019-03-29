@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// created by drew
 public class SubtitleSystem : MonoBehaviour
 {
     private Text text;
