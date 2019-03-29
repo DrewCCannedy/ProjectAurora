@@ -7,7 +7,7 @@ public class Generator : MonoBehaviour
 
     GameObject player;
     int wiresPlugged = 0;
-    public bool powerOn;
+    public Interaction interaction;
     public GameObject redWire;
     public GameObject greenWire;
     public GameObject blueWire;
@@ -30,8 +30,8 @@ public class Generator : MonoBehaviour
     {
         if (wiresPlugged == 4)
         {
-            powerOn = true;
-            //Debug.Log("Ship power online.");
+            interaction.powerOn = true;
+            Debug.Log("Ship power online.");
         }
 
     }
