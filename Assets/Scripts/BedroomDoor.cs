@@ -8,6 +8,8 @@ public class BedroomDoor : MonoBehaviour
     GameObject player;
     public bool canOpen = false;
     public int timesHit = 0;
+    public Interaction interaction;
+    bool closedWhenPowerOn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,12 @@ public class BedroomDoor : MonoBehaviour
         {
                 // changed by drew
                 canOpen = true;
+        }
+        
+        // play close door animation when power on
+        if (!closedWhenPowerOn && interaction.powerOn) {
+            GetComponent<Animator>().SetTrigger("powerOn");
+            closedWhenPowerOn = true;
         }
     }
 }
