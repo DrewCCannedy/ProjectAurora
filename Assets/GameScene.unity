@@ -4478,7 +4478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_FootstepSounds.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_RunSpeed
@@ -4491,15 +4491,15 @@ PrefabInstance:
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_FootstepSounds.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: f62339501f3b74244867d546fc0d21df, type: 3}
+      objectReference: {fileID: 8300000, guid: 06d1d15c30a8e1846b8c5b6d59176539, type: 3}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_FootstepSounds.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: 02cf44b4a518f99459b9ac69e81e16da, type: 3}
+      objectReference: {fileID: 8300000, guid: e9e090f40e3278a488a550a7328c8bcf, type: 3}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_FootstepSounds.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 7c1c1ddac5aada54bad999b06bf58aa1, type: 3}
+      objectReference: {fileID: 8300000, guid: 230ab87787370da4d9043444a69458fb, type: 3}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_WalkSpeed
       value: 5
@@ -4520,6 +4520,14 @@ PrefabInstance:
       propertyPath: m_LandSound
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_FootstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: aaea0e30ded52824a9d4779c6bfe1adc, type: 3}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_FootstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1772c33297709f749bb03dd0b1ae110a, type: 3}
     - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -5634,8 +5642,8 @@ MonoBehaviour:
   sightDist: 3
   subtitleSystem: {fileID: 1403774168}
   flashlight: {fileID: 102625305}
-  doorOpen: {fileID: 8300000, guid: 244147a3b56d2ac4ba34807ad7c7fd9b, type: 3}
-  doorReject: {fileID: 8300000, guid: 1b5e55c24ea63ae45986c8ad55f18b85, type: 3}
+  doorOpen: {fileID: 8300000, guid: a28f37d3633a5bd44a63a0e4606326a0, type: 3}
+  doorReject: {fileID: 8300000, guid: 6b1a1f42836691546b319406d4f44ff5, type: 3}
   powerOn: 0
 --- !u!108 &611928010
 Light:
@@ -8491,7 +8499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fbebe6a75afaa84890d2697d7dfdeda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 93788d3dc0def6c4e9819f094dfe2fbd, type: 3}
+  clip: {fileID: 8300000, guid: 883de435089fa364296b95682645b095, type: 3}
 --- !u!82 &860912357
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12236,7 +12244,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ea912b46938ec184597b1a6766f6cf72, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 46c199752a39a7f459ad2a6e40e6b626, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.115
   m_Pitch: 1
