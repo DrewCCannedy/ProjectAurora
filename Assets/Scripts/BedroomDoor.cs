@@ -6,6 +6,7 @@ public class BedroomDoor : MonoBehaviour
 {
 
     GameObject player;
+    public bool canOpen = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,8 @@ public class BedroomDoor : MonoBehaviour
     {
         if ((player.GetComponent<Inventory>().hasSpacesuit == true) && (player.GetComponent<Inventory>().hasFlashlight == true)) //Checks if Flashlight and Spacesuit are both in inventory
         {
-                gameObject.tag = "Door"; //Changes the object's tag to 'Door' which makes it interactable
+                // changed by drew
+                canOpen = true;
         }
     }
 }
