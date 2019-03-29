@@ -793,6 +793,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 58350583}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &58350585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 149f87037871a87468d38318567c8c35,
+    type: 3}
+  m_PrefabInstance: {fileID: 58350583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &58350586
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58350585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.04069679
+  m_Height: 0.15683244
+  m_Direction: 1
+  m_Center: {x: 0.00000315667, y: 0.07761165, z: -0.00014145851}
 --- !u!4 &62131857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: a21e3509c85ad044892a2d4129b1e250,
@@ -4095,7 +4115,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6756,6 +6776,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1023875109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &733815153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: a7f81b3f4d9fbf347a6e31c388f8eef2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897764506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &733815157
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733815153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a7f81b3f4d9fbf347a6e31c388f8eef2, type: 3}
 --- !u!1 &738345794
 GameObject:
   m_ObjectHideFlags: 0
@@ -7574,11 +7614,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e67a3e8a37270409c63f69b67112e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerOn: 0
+  camera: {fileID: 611928009}
   redWire: {fileID: 1917384094, guid: c663b77d9c2239e43b093bbec05e2d8f, type: 3}
   greenWire: {fileID: 927282786, guid: 3ccedbb519d213542871512ca6db820a, type: 3}
   blueWire: {fileID: 1924568798, guid: e86ca3bd013457b458c5022cbd1d7f19, type: 3}
   yellowWire: {fileID: 582952889, guid: fe0393227e5e5c54ca582f9c8f1cf0af, type: 3}
+  redPlugged: 0
+  greenPlugged: 0
+  bluePlugged: 0
+  yellowPlugged: 0
 --- !u!1001 &811306519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8824,11 +8868,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 927282789, guid: 3ccedbb519d213542871512ca6db820a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.423681
+      value: 19.589
       objectReference: {fileID: 0}
     - target: {fileID: 927282789, guid: 3ccedbb519d213542871512ca6db820a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.272
+      value: -6.562
       objectReference: {fileID: 0}
     - target: {fileID: 927282789, guid: 3ccedbb519d213542871512ca6db820a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14192,7 +14236,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -15364,7 +15408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e67a3e8a37270409c63f69b67112e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerOn: 0
+  camera: {fileID: 0}
   redWire: {fileID: 3101637652099042793, guid: ecaa5f97a09dbcc4eaa7e0b6995eb7bd, type: 3}
   greenWire: {fileID: 1978428384066826266, guid: d1f9d2fd836cd3d4f82007576ff91f54,
     type: 3}
@@ -15372,6 +15416,10 @@ MonoBehaviour:
     type: 3}
   yellowWire: {fileID: 739244707208553163, guid: bc0a9455a41cc714483800c076f5ec5f,
     type: 3}
+  redPlugged: 0
+  greenPlugged: 0
+  bluePlugged: 0
+  yellowPlugged: 0
 --- !u!1 &1587985181
 GameObject:
   m_ObjectHideFlags: 0
