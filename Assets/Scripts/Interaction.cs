@@ -69,9 +69,6 @@ public class Interaction : MonoBehaviour
                             if (door.timesHit < 3) {
                                 objectHit.collider.gameObject.GetComponent<Animator>().SetTrigger("bash");
                                 door.timesHit++;
-                                if (door.timesHit == 3) {
-                                    objectHit.collider.enabled = false;
-                                }
                             }
                         }
                         
