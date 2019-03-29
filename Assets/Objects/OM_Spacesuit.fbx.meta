@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: b2e5c9486aead764ba9135f0f2cb2285
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armor
+    100002: Boots_Bracers_Belt
+    100004: Helmet_Glass
+    100006: Helmet_Tank
+    100008: //RootNode
+    100010: Suit
+    400000: Armor
+    400002: Boots_Bracers_Belt
+    400004: Helmet_Glass
+    400006: Helmet_Tank
+    400008: //RootNode
+    400010: Suit
+    2100000: M_Helmet_Glass
+    2100002: M_Suit
+    2100004: M_Armor
+    2100006: M_Helmet_Tank
+    2100008: M_Boots_Bracers_Belt
+    2300000: Armor
+    2300002: Boots_Bracers_Belt
+    2300004: Helmet_Glass
+    2300006: Helmet_Tank
+    2300008: Suit
+    3300000: Armor
+    3300002: Boots_Bracers_Belt
+    3300004: Helmet_Glass
+    3300006: Helmet_Tank
+    3300008: Suit
+    4300000: Helmet_Glass
+    4300002: Suit
+    4300004: Armor
+    4300006: Helmet_Tank
+    4300008: Boots_Bracers_Belt
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
