@@ -15,6 +15,9 @@ public class Interaction : MonoBehaviour
     public GameObject flashlight;
     // door sound, written by drew
     public AudioClip doorOpen;
+    public AudioClip doorReject;
+
+    public bool powerOn;
     
     // Start is called before the first frame update
     void Start()
@@ -59,9 +62,21 @@ public class Interaction : MonoBehaviour
                     if (door.canOpen) {
                         // open door, run door animation
                         Debug.Log("Opened " + objectHit.collider.gameObject.name + ".");
-                        objectHit.collider.gameObject.GetComponent<Animator>().SetTrigger("open");
-                        transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(doorOpen);
+                        if (powerOn) {
+                            objectHit.collider.gameObject.GetComponent<Animator>().SetTrigger("open");
+                            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(doorOpen);
+                        } else {
+                            if (door.timesHit < 3) {
+                                objectHit.collider.gameObject.GetComponent<Animator>().SetTrigger("bash");
+                                door.timesHit++;
+                                if (door.timesHit == 3) {
+                                    objectHit.collider.enabled = false;
+                                }
+                            }
+                        }
+                        
                     } else {
+                        transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(doorReject);
                         subtitleSystem.playDoorHint = true;
                     }
                 } catch (Exception e) { // this runs if there is no door script on the door. Just deletes the door

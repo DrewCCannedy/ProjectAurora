@@ -7,6 +7,7 @@ public class BedroomDoor : MonoBehaviour
 
     GameObject player;
     public bool canOpen = false;
+    public int timesHit = 0;
 
     // Start is called before the first frame update
     void Start()
