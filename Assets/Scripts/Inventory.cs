@@ -15,9 +15,16 @@ public class Inventory : MonoBehaviour
     public GameObject cursor;
 
     public GameObject inventoryPanel;
-    public GameObject spacesuitButton, flashlightButton;
-    public GameObject rwireButton, gwireButton, bwireButton, ywireButton;
-    public GameObject rdriveButton, gdriveButton, bdriveButton, ydriveButton;
+    public GameObject spacesuitButton;
+    public GameObject flashlightButton;
+    public GameObject rwireButton;
+    public GameObject gwireButton;
+    public GameObject bwireButton;
+    public GameObject ywireButton;
+    public GameObject rdriveButton;
+    public GameObject gdriveButton;
+    public GameObject bdriveButton;
+    public GameObject ydriveButton;
 
     // Start is called before the first frame update
     void Start()
