@@ -7793,6 +7793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e67a3e8a37270409c63f69b67112e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subSystem: {fileID: 1403774168}
   interaction: {fileID: 611928009}
   redWire: {fileID: 1917384094, guid: c663b77d9c2239e43b093bbec05e2d8f, type: 3}
   greenWire: {fileID: 927282786, guid: 3ccedbb519d213542871512ca6db820a, type: 3}
@@ -8540,7 +8541,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 93788d3dc0def6c4e9819f094dfe2fbd, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8550,8 +8551,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2
-  MaxDistance: 6
+  MinDistance: 6
+  MaxDistance: 19.305672
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -8868,8 +8869,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8809825cc43b5840b4483761461af9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
-  interaction: {fileID: 0}
+  sounds:
+  - {fileID: 8300000, guid: c425dfb5a250c5d4b9a09a6883f0a251, type: 3}
+  - {fileID: 8300000, guid: c993842787ba0ed4dbe6e461dd6de6ce, type: 3}
+  interaction: {fileID: 611928009}
 --- !u!82 &881055805
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14350,6 +14353,13 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 99d9f7969e8bf42458e3106dc1d04843, type: 3}
     - {fileID: 8300000, guid: ddb0eee28ee7e0f4db65aba46729f917, type: 3}
     - {fileID: 8300000, guid: ad70442ee3c47d54bac197601420e5e8, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: 99e1a2e5a5b6d5d4f89aef9807631ad8, type: 3}
+    - {fileID: 8300000, guid: 1566eec19158d4546b58f27c7a04161a, type: 3}
+    - {fileID: 8300000, guid: cc2357ecfc8c2844b8368110ae4c18ea, type: 3}
+    - {fileID: 8300000, guid: aa2d6cd0a3722c348bca657566a0631b, type: 3}
+    - {fileID: 8300000, guid: 7a578a1b51818b74593d643a1456095f, type: 3}
+    - {fileID: 8300000, guid: 79428ab7b8695dc489e29429cec06098, type: 3}
   audioSource: {fileID: 1540009050}
   playFlashLight: 1
   playSpaceSuit: 0
@@ -14357,6 +14367,7 @@ MonoBehaviour:
   playBridgeOnce: 1
   playGreenWire: 0
   playDoorHint: 0
+  playPowerOn: 0
 --- !u!1001 &1404281261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16130,6 +16141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e67a3e8a37270409c63f69b67112e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subSystem: {fileID: 0}
   interaction: {fileID: 0}
   redWire: {fileID: 3101637652099042793, guid: ecaa5f97a09dbcc4eaa7e0b6995eb7bd, type: 3}
   greenWire: {fileID: 1978428384066826266, guid: d1f9d2fd836cd3d4f82007576ff91f54,
