@@ -98,7 +98,7 @@ public class SubtitleSystem : MonoBehaviour
         } else if (playFlashLight && Time.time > 18f) {
             playFlashLight = PlayAudioSection(2);
         } else if (playDoorHint && !playFlashLight) {
-            playDoorHint = PlaySubtitleSection(5);
+            playDoorHint = PlayAudioSection(5);
         } else if (playSpaceSuit) {
             playSpaceSuit = PlayAudioSection(1);
         } else if (playBridge) {
