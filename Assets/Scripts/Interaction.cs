@@ -18,6 +18,9 @@ public class Interaction : MonoBehaviour
     public AudioClip doorReject;
 
     public bool powerOn;
+
+    // keep track of wires 
+    int wiresFound = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,12 @@ public class Interaction : MonoBehaviour
         if (transform.position.x >= 24f && subtitleSystem.playBridgeOnce) {
            subtitleSystem.playBridgeOnce = false;
             subtitleSystem.playBridge = true;
+        }
+
+        // play green wire sounds
+        if (wiresFound == 3) {
+            subtitleSystem.playGreenWire = true;
+            wiresFound++;
         }
 
         Debug.DrawRay(this.transform.position, this.transform.forward * sightDist, Color.magenta); //Checks for interactable objects by drawing a ray in front of the player
@@ -114,7 +123,9 @@ public class Interaction : MonoBehaviour
                 {
                     Debug.Log("Picked up Red Wire.");
                     player.GetComponent<Inventory>().hasRwire = true;
+                    wiresFound++;
                     Destroy(objectHit.collider.gameObject);
+                    
                 }
 
                 if (objectHit.collider.gameObject.GetComponent<Pickups>().pickupID == Pickups.PickupList.gwire)
@@ -128,6 +139,7 @@ public class Interaction : MonoBehaviour
                 {
                     Debug.Log("Picked up Blue Wire.");
                     player.GetComponent<Inventory>().hasBwire = true;
+                    wiresFound++;
                     Destroy(objectHit.collider.gameObject);
                 }
 
@@ -135,6 +147,7 @@ public class Interaction : MonoBehaviour
                 {
                     Debug.Log("Picked up Yellow Wire.");
                     player.GetComponent<Inventory>().hasYwire = true;
+                    wiresFound++;
                     Destroy(objectHit.collider.gameObject);
                 }
 
