@@ -38,12 +38,12 @@ public class Generator : MonoBehaviour
         if (redPlugged == true && greenPlugged == true && bluePlugged == true && yellowPlugged == true) //All 4 wires plugged, power turns on
         {
             camera.powerOn = true;
-            Debug.Log("Ship power online.");
+            //Debug.Log("Ship power online.");
         }
 
         if (redPlugged == true && greenPlugged != true && bluePlugged == true && yellowPlugged == true) //Play voice line for green wire missing
         {
-            Debug.Log("Green wire still required.");
+            //Debug.Log("Green wire still required.");
         }
 
     }
