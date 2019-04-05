@@ -43,6 +43,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private AudioSource m_AudioSource;
 
         GameObject player;
+        GameObject keypad;
 
 
         // Use this for initialization
@@ -60,6 +61,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
 
             player = GameObject.FindWithTag("Player");
+            keypad = GameObject.FindWithTag("Keypad");
         }
 
 
@@ -92,6 +94,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_WalkSpeed = 0;
                 m_RunSpeed = 0;
             } else
+            {
+                m_WalkSpeed = 5;
+                m_RunSpeed = 5;
+            }
+
+            if (keypad.GetComponent<PodCode>().keypadMode == true)
+            {
+                m_WalkSpeed = 0;
+                m_RunSpeed = 0;
+            }
+            else
             {
                 m_WalkSpeed = 5;
                 m_RunSpeed = 5;
@@ -261,6 +274,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             if (player.GetComponent<Inventory>().inventoryMode == true)
+            {
+                m_MouseLook.SetCursorLock(false);
+                //m_MouseLook.lockCursor = false;
+            }
+
+            if (keypad.GetComponent<PodCode>().keypadMode == false)
+            {
+                m_MouseLook.SetCursorLock(true);
+                m_MouseLook.LookRotation(transform, m_Camera.transform);
+                //m_MouseLook.lockCursor = true;
+            }
+
+            if (keypad.GetComponent<PodCode>().keypadMode == true)
             {
                 m_MouseLook.SetCursorLock(false);
                 //m_MouseLook.lockCursor = false;

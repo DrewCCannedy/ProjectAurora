@@ -12,6 +12,7 @@ public class Interaction : MonoBehaviour
     GameObject player;
     GameObject generator;
     GameObject cockpit;
+    GameObject keypad;
     public GameObject flashlight;
     // door sound, written by drew
     public AudioClip doorOpen;
@@ -28,6 +29,7 @@ public class Interaction : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         generator = GameObject.FindWithTag("Power");
         cockpit = GameObject.FindWithTag("Cockpit");
+        keypad = GameObject.FindWithTag("Keypad");
     }
 
     // Update is called once per frame
@@ -90,7 +92,14 @@ public class Interaction : MonoBehaviour
                 }
             }
 
-            if (objectHit.collider.gameObject.tag == ("Pickup") && Input.GetMouseButtonDown(0)) //Pickups will be destroyed and placed into inventory upon interaction
+                if (objectHit.collider.gameObject.tag == ("Keypad") && Input.GetMouseButtonDown(0)) //Occurs if escape pod keypad is interacted with
+                {
+                    Debug.Log("Interacted with keypad.");
+                    keypad.GetComponent<PodCode>().keypadMode = true;
+
+            }
+
+                if (objectHit.collider.gameObject.tag == ("Pickup") && Input.GetMouseButtonDown(0)) //Pickups will be destroyed and placed into inventory upon interaction
             {
                 //Debug.Log("Picked up " + objectHit.collider.gameObject.name + ".");
 

@@ -29,7 +29,7 @@ public class DataUpload : MonoBehaviour
     {
         if (driveCorrect == true)
         {
-            Debug.Log("Data uploading.");
+            //Debug.Log("Data uploading.");
         }
     }
 
