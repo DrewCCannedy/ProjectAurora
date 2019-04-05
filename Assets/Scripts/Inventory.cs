@@ -54,14 +54,14 @@ public class Inventory : MonoBehaviour
         if (inventoryMode == true) //Toggling the inventory panel on and off
         {
             inventoryPanel.SetActive(true);
-            cursor.SetActive(true);
+            //cursor.SetActive(true); Commented the cursor out as it seems to be interfering with the ability to press inventory buttons
             cursor.transform.position = Input.mousePosition;
         }
 
         if (inventoryMode == false)
         {
             inventoryPanel.SetActive(false);
-            cursor.SetActive(false);
+            //cursor.SetActive(false);
         }
 
 
