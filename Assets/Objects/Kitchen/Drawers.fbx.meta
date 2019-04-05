@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 44b7f45fc074ec74eb140896792949f3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: base
+    100002: base 1
+    100004: base 2
+    100006: base 3
+    100008: base 4
+    100010: base 5
+    100012: //RootNode
+    100014: drawers
+    100016: drawers 1
+    100018: drawers 2
+    100020: drawers 3
+    100022: drawers 4
+    100024: drawers 5
+    100026: Drawers1
+    100028: Drawers2
+    100030: Drawers3
+    100032: Drawers4
+    100034: Drawers5
+    100036: Drawers6
+    100038: FilingCabinets
+    100040: handle
+    100042: handle 1
+    100044: handle 2
+    100046: handle 3
+    100048: handle 4
+    100050: handle 5
+    400000: base
+    400002: base 1
+    400004: base 2
+    400006: base 3
+    400008: base 4
+    400010: base 5
+    400012: //RootNode
+    400014: drawers
+    400016: drawers 1
+    400018: drawers 2
+    400020: drawers 3
+    400022: drawers 4
+    400024: drawers 5
+    400026: Drawers1
+    400028: Drawers2
+    400030: Drawers3
+    400032: Drawers4
+    400034: Drawers5
+    400036: Drawers6
+    400038: FilingCabinets
+    400040: handle
+    400042: handle 1
+    400044: handle 2
+    400046: handle 3
+    400048: handle 4
+    400050: handle 5
+    2100000: lambert7
+    2100002: lambert6
+    2100004: lambert5
+    2300000: base
+    2300002: base 1
+    2300004: base 2
+    2300006: base 3
+    2300008: base 4
+    2300010: base 5
+    2300012: drawers
+    2300014: drawers 1
+    2300016: drawers 2
+    2300018: drawers 3
+    2300020: drawers 4
+    2300022: drawers 5
+    2300024: handle
+    2300026: handle 1
+    2300028: handle 2
+    2300030: handle 3
+    2300032: handle 4
+    2300034: handle 5
+    3300000: base
+    3300002: base 1
+    3300004: base 2
+    3300006: base 3
+    3300008: base 4
+    3300010: base 5
+    3300012: drawers
+    3300014: drawers 1
+    3300016: drawers 2
+    3300018: drawers 3
+    3300020: drawers 4
+    3300022: drawers 5
+    3300024: handle
+    3300026: handle 1
+    3300028: handle 2
+    3300030: handle 3
+    3300032: handle 4
+    3300034: handle 5
+    4300000: base
+    4300002: drawers
+    4300004: handle
+    4300006: base
+    4300008: drawers
+    4300010: handle
+    4300012: base
+    4300014: drawers
+    4300016: handle
+    4300018: base
+    4300020: drawers
+    4300022: handle
+    4300024: base
+    4300026: drawers
+    4300028: handle
+    4300030: base
+    4300032: drawers
+    4300034: handle
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
