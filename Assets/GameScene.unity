@@ -22246,6 +22246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keypad Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 1369364087553708807, guid: 8aebf7cd85b0b5c43938f113504c7986,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5936733608800315727, guid: 8aebf7cd85b0b5c43938f113504c7986,
         type: 3}
       propertyPath: m_LocalPosition.x
