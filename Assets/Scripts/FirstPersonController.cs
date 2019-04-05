@@ -99,7 +99,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_RunSpeed = 5;
             }
 
-            if (keypad.GetComponent<PodCode>().keypadMode == true)
+            /*if (keypad.GetComponent<PodCode>().keypadMode == true)
             {
                 m_WalkSpeed = 0;
                 m_RunSpeed = 0;
@@ -109,6 +109,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_WalkSpeed = 5;
                 m_RunSpeed = 5;
             }
+            */
         }
 
 
@@ -279,7 +280,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //m_MouseLook.lockCursor = false;
             }
 
-            if (keypad.GetComponent<PodCode>().keypadMode == false)
+            /*if (keypad.GetComponent<PodCode>().keypadMode == false)
             {
                 m_MouseLook.SetCursorLock(true);
                 m_MouseLook.LookRotation(transform, m_Camera.transform);
@@ -291,6 +292,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_MouseLook.SetCursorLock(false);
                 //m_MouseLook.lockCursor = false;
             }
+            */
         }
 
 
