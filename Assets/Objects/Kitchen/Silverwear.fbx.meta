@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: e1dc3163d9f0c474db2cae82cb2ad86d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: fork
+    100002: fork1
+    100004: fork2
+    100006: fork3
+    100008: forks
+    100010: kitchen
+    100012: knife
+    100014: knife1
+    100016: knife2
+    100018: knife3
+    100020: knife4
+    100022: knives
+    100024: silverware
+    100026: //RootNode
+    100028: spoon
+    100030: spoon2
+    100032: spoon3
+    100034: spoon4
+    100036: spoons
+    100038: utensils
+    400000: fork
+    400002: fork1
+    400004: fork2
+    400006: fork3
+    400008: forks
+    400010: kitchen
+    400012: knife
+    400014: knife1
+    400016: knife2
+    400018: knife3
+    400020: knife4
+    400022: knives
+    400024: silverware
+    400026: //RootNode
+    400028: spoon
+    400030: spoon2
+    400032: spoon3
+    400034: spoon4
+    400036: spoons
+    400038: utensils
+    2100000: checker
+    2300000: fork
+    2300002: fork1
+    2300004: fork2
+    2300006: fork3
+    2300008: knife
+    2300010: knife1
+    2300012: knife2
+    2300014: knife3
+    2300016: knife4
+    2300018: spoon
+    2300020: spoon2
+    2300022: spoon3
+    2300024: spoon4
+    3300000: fork
+    3300002: fork1
+    3300004: fork2
+    3300006: fork3
+    3300008: knife
+    3300010: knife1
+    3300012: knife2
+    3300014: knife3
+    3300016: knife4
+    3300018: spoon
+    3300020: spoon2
+    3300022: spoon3
+    3300024: spoon4
+    4300000: knife
+    4300002: knife1
+    4300004: knife2
+    4300006: knife3
+    4300008: knife4
+    4300010: spoon
+    4300012: spoon2
+    4300014: spoon3
+    4300016: spoon4
+    4300018: fork
+    4300020: fork1
+    4300022: fork2
+    4300024: fork3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
