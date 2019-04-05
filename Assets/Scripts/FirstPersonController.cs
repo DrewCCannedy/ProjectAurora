@@ -89,7 +89,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
 
-            if (player.GetComponent<Inventory>().inventoryMode == true)
+            if (player.GetComponent<Inventory>().inventoryMode == true || keypad.GetComponent<PodCode>().keypadMode == true) //Sets player speed to 0 when interacting with inventory or keypad
             {
                 m_WalkSpeed = 0;
                 m_RunSpeed = 0;
@@ -98,18 +98,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_WalkSpeed = 5;
                 m_RunSpeed = 5;
             }
-
-            /*if (keypad.GetComponent<PodCode>().keypadMode == true)
-            {
-                m_WalkSpeed = 0;
-                m_RunSpeed = 0;
-            }
-            else
-            {
-                m_WalkSpeed = 5;
-                m_RunSpeed = 5;
-            }
-            */
         }
 
 
@@ -267,32 +255,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
 
 
-            if (player.GetComponent<Inventory>().inventoryMode == false)
+            if (player.GetComponent<Inventory>().inventoryMode == false && keypad.GetComponent<PodCode>().keypadMode == false) //Locks cursor
             {
                 m_MouseLook.SetCursorLock(true);
                 m_MouseLook.LookRotation(transform, m_Camera.transform);
                 //m_MouseLook.lockCursor = true;
             }
 
-            if (player.GetComponent<Inventory>().inventoryMode == true)
+            if (player.GetComponent<Inventory>().inventoryMode == true || keypad.GetComponent<PodCode>().keypadMode == true) //Unlocks cursor when interacting with inventory or keypad
             {
                 m_MouseLook.SetCursorLock(false);
                 //m_MouseLook.lockCursor = false;
             }
-
-            /*if (keypad.GetComponent<PodCode>().keypadMode == false)
-            {
-                m_MouseLook.SetCursorLock(true);
-                m_MouseLook.LookRotation(transform, m_Camera.transform);
-                //m_MouseLook.lockCursor = true;
-            }
-
-            if (keypad.GetComponent<PodCode>().keypadMode == true)
-            {
-                m_MouseLook.SetCursorLock(false);
-                //m_MouseLook.lockCursor = false;
-            }
-            */
         }
 
 
