@@ -17,8 +17,12 @@ public class Interaction : MonoBehaviour
     // door sound, written by drew
     public AudioClip doorOpen;
     public AudioClip doorReject;
+    public AudioClip doorsmash1;
+    public AudioClip doorsmash2;
+    public AudioClip doorsmash3;
 
     public bool powerOn;
+    bool powerOnTrigger = true;
 
     // keep track of wires 
     int wiresFound = 0;
@@ -45,6 +49,12 @@ public class Interaction : MonoBehaviour
         if (wiresFound == 3) {
             subtitleSystem.playGreenWire = true;
             wiresFound++;
+        }
+
+        // play powerOn sound
+        if (powerOn && powerOnTrigger) {
+            subtitleSystem.playPowerOn = true;
+            powerOnTrigger = false;
         }
 
         Debug.DrawRay(this.transform.position, this.transform.forward * sightDist, Color.magenta); //Checks for interactable objects by drawing a ray in front of the player
@@ -79,6 +89,13 @@ public class Interaction : MonoBehaviour
                         } else {
                             if (door.timesHit < 3) {
                                 objectHit.collider.gameObject.GetComponent<Animator>().SetTrigger("bash");
+                                if (door.timesHit == 0) {
+                                    transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(doorsmash1);
+                                } else if (door.timesHit == 1) {
+                                    transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(doorsmash2);
+                                } else {
+                                    transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(doorsmash3);
+                                }
                                 door.timesHit++;
                             }
                         }
