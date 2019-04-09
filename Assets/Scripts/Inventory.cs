@@ -12,24 +12,19 @@ public class Inventory : MonoBehaviour
     public bool hasRdrive, hasGdrive, hasBdrive, hasYdrive;
 
     public bool inventoryMode;
-    public GameObject cursor;
+    public Text oxygenText;
+    public GameObject cursor, oxygenPanel;
 
-    public GameObject inventoryPanel;
-    public GameObject spacesuitButton;
-    public GameObject flashlightButton;
-    public GameObject rwireButton;
-    public GameObject gwireButton;
-    public GameObject bwireButton;
-    public GameObject ywireButton;
-    public GameObject rdriveButton;
-    public GameObject gdriveButton;
-    public GameObject bdriveButton;
-    public GameObject ydriveButton;
+    public GameObject inventoryPanel, spacesuitButton, flashlightButton;
+    public GameObject rwireButton, gwireButton, bwireButton, ywireButton;
+    public GameObject rdriveButton, gdriveButton, bdriveButton, ydriveButton;
+
+    int oxygenRemaining = 360;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        InvokeRepeating("DecreaseOxygen", 1.0f, 1.0f);
     }
 
     // Update is called once per frame
@@ -65,9 +60,13 @@ public class Inventory : MonoBehaviour
         }
 
 
-        if (hasSpacesuit == true && inventoryMode == true) //Showing the buttons for each item only if the player has picked them up
+        if (hasSpacesuit == true) //Showing the buttons for each item only if the player has picked them up
         {
-            spacesuitButton.SetActive(true);
+            oxygenPanel.SetActive(true);
+            if (inventoryMode == true)
+            {
+                spacesuitButton.SetActive(true);
+            }
         }
         else
         {
@@ -153,6 +152,15 @@ public class Inventory : MonoBehaviour
         else
         {
             ydriveButton.SetActive(false);
+        }
+    }
+
+    void DecreaseOxygen()
+    {
+        if (hasSpacesuit == true && oxygenRemaining > 0)
+        {
+            oxygenRemaining -= 1;
+            oxygenText.text = ("Oxygen: " + oxygenRemaining.ToString());
         }
     }
 }
