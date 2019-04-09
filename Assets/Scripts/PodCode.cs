@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PodCode : MonoBehaviour
 {
     public bool keypadMode;
-    public GameObject keypadPanel, podDoor;
+    public GameObject keypadPanel, podDoor, playerCam;
     public Button b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bDel, bEnter;
     string code;
     string correctCode = "451";
@@ -15,6 +15,7 @@ public class PodCode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerCam = GameObject.FindWithTag("MainCamera");
         b0.onClick.AddListener(Add0);
         b1.onClick.AddListener(Add1);
         b2.onClick.AddListener(Add2);
@@ -32,7 +33,7 @@ public class PodCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keypadMode == true && Input.GetKeyDown("escape")) //Escape key exists keypad mode
+        if (keypadMode == true && Input.GetKeyDown("escape")) //Escape key exits keypad mode
         {
             keypadMode = false;
         }
@@ -53,90 +54,127 @@ public class PodCode : MonoBehaviour
 
     void Add0()
     {
-        code = code + "0";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        { 
+            code = code + "0";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add1()
     {
-        code = code + "1";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "1";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add2()
     {
-        code = code + "2";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "2";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add3()
     {
-        code = code + "3";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "3";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add4()
     {
-        code = code + "4";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "4";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add5()
     {
-        code = code + "5";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "5";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add6()
     {
-        code = code + "6";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "6";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add7()
     {
-        code = code + "7";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "7";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add8()
     {
-        code = code + "8";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "8";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Add9()
     {
-        code = code + "9";
-        Debug.Log(code);
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = code + "9";
+            Debug.Log(code);
+            keypadText.text = code;
+        }
     }
 
     void Delete()
     {
-        code = "";
-        Debug.Log("Code entry cleared.");
-        keypadText.text = code;
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
+        {
+            code = "";
+            Debug.Log("Code entry cleared.");
+            keypadText.text = code;
+        }
     }
 
     void EnterCode()
     {
-        if (code == correctCode)
+        if (playerCam.GetComponent<Interaction>().powerOn == true)
         {
-            keypadText.text = ("Access Granted");
-            podDoor.SetActive(false);
-        } else
-        {
-            keypadText.text = ("Access Denied");
+            if (code == correctCode)
+            {
+                keypadText.text = ("Access Granted");
+                podDoor.SetActive(false);
+            }
+            else
+            {
+                keypadText.text = ("Access Denied");
+            }
         }
 
     }

@@ -7,6 +7,7 @@ public class DataUpload : MonoBehaviour
 {
 
     GameObject player;
+    GameObject playerCam;
     public GameObject redDrive, greenDrive, blueDrive, yellowDrive;
     public bool driveCorrect;
     public bool uploadComplete;
@@ -18,6 +19,7 @@ public class DataUpload : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        playerCam = GameObject.FindWithTag("MainCamera");
         rdButton.onClick.AddListener(PlugRedDrive);
         gdButton.onClick.AddListener(PlugGreenDrive);
         bdButton.onClick.AddListener(PlugBlueDrive);
@@ -27,7 +29,7 @@ public class DataUpload : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (driveCorrect == true)
+        if (driveCorrect == true && playerCam.GetComponent<Interaction>().powerOn == true)
         {
             //Debug.Log("Data uploading.");
         }
