@@ -45,6 +45,12 @@ public class Interaction : MonoBehaviour
             subtitleSystem.playBridge = true;
         }
 
+        // play drive warn when in bedroom after power is on
+        if (transform.position.x < 0f && subtitleSystem.playDriveWarnOnce && powerOn) {
+           subtitleSystem.playDriveWarnOnce = false;
+            subtitleSystem.playDriveWarn = true;
+        }
+
         // play green wire sounds
         if (wiresFound == 3) {
             subtitleSystem.playGreenWire = true;

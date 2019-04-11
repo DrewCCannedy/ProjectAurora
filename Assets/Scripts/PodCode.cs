@@ -10,7 +10,10 @@ public class PodCode : MonoBehaviour
     public Button b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bDel, bEnter;
     string code;
     string correctCode = "451";
+    string memeCode = "666";
     public Text keypadText;
+
+    public SubtitleSystem subtitleSystem;
 
     // Start is called before the first frame update
     void Start()
@@ -170,10 +173,14 @@ public class PodCode : MonoBehaviour
             {
                 keypadText.text = ("Access Granted");
                 podDoor.SetActive(false);
+            } else if (code == memeCode) {
+                keypadText.text = ("!!LICK MY TOES!!");
+                subtitleSystem.playEasterEgg = true;
             }
             else
             {
                 keypadText.text = ("Access Denied");
+                subtitleSystem.playError3 = true;
             }
         }
 
