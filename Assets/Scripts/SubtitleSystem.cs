@@ -36,6 +36,13 @@ public class SubtitleSystem : MonoBehaviour
     public bool playGreenWire = false;
     public bool playDoorHint = false;
     public bool playPowerOn = false;
+    public bool playDriveWarn = false;
+    public bool playDriveWarnOnce = true;
+    public bool playUploading = false;
+    public bool playError1 = false;
+    public bool playError2 = false;
+    public bool playEasterEgg = false;
+    public bool playError3 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -99,6 +106,38 @@ public class SubtitleSystem : MonoBehaviour
         subtitles.Add("AI: Well, looks like someone’s getting fired. Sucks.");
         subtitles.Add("AI: You know… you could just take out the hard drive and hook it up to the bridge terminal instead.");
         subtitleSections.Add(subtitles);
+
+        // Drive Warn Text [7]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Make sure you pick the right drive...");
+        subtitles.Add("AI: I don't know which one you'd put HYPER SPACE ANOMOLIE data on");
+        subtitleSections.Add(subtitles);
+
+        // Uploading Text [8]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Reading contents of drive now...");
+        subtitleSections.Add(subtitles);
+
+        // Error 1 Text [9]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Wrong. Try again.");
+        subtitleSections.Add(subtitles);
+
+        // Error 2 Text [10]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Wrong. I can help you write a resignation letter so you don't get fired. Or a eulogy.");
+        subtitleSections.Add(subtitles);
+
+        // Easter Egg Text [11]
+        subtitles = new List<string>();
+        subtitles.Add("AI: QUENTIN TARANTINO QUENTIN TARANTINO QUENTIN TARANTINO");
+        subtitleSections.Add(subtitles);
+
+        // Easter Egg Text [12]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Wait, you seriously don't know the code to your own escape pod?");
+        subtitles.Add("AI: There has to be somewhere you can find it. Hurry!");
+        subtitleSections.Add(subtitles);
     }
 
     // Update is called once per frame
@@ -118,6 +157,18 @@ public class SubtitleSystem : MonoBehaviour
             playGreenWire = PlayAudioSection(4);
         } else if (playPowerOn) {
             playPowerOn = PlayAudioSection(6);
+        } else if (playDriveWarn) {
+            playDriveWarn = PlayAudioSection(7);
+        } else if (playUploading) {
+            playUploading =PlayAudioSection(8);
+        } else if (playError1) {
+            playError1 = PlayAudioSection(9);
+        } else if (playError2) {
+            playError2 = PlayAudioSection(10);
+        } else if (playEasterEgg) {
+            playEasterEgg = PlayAudioSection(11);
+        } else if (playError3) {
+            playError3 =PlayAudioSection(12);
         } else {
             text.text = "";
         }

@@ -412,6 +412,7 @@ MonoBehaviour:
   bDel: {fileID: 1382104381}
   bEnter: {fileID: 449232279}
   keypadText: {fileID: 1857910360}
+  subtitleSystem: {fileID: 1403774168}
 --- !u!1 &21534709
 GameObject:
   m_ObjectHideFlags: 0
@@ -14746,6 +14747,20 @@ MonoBehaviour:
     - {fileID: 8300000, guid: aa2d6cd0a3722c348bca657566a0631b, type: 3}
     - {fileID: 8300000, guid: 7a578a1b51818b74593d643a1456095f, type: 3}
     - {fileID: 8300000, guid: 79428ab7b8695dc489e29429cec06098, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: 9f496065f7a9c864cb2a71ffdb4def30, type: 3}
+    - {fileID: 8300000, guid: e5b480d1d838dfb42a003fc8b77f56cf, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: bc50f49812aef3e4d8d8bbbb55e73200, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: c599369ee2dc3cd48af7762cc40ac680, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: f1fd2fd9db88a9b40aee1eb5e74c3bcb, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: bd2924c1d89be9046a6e9158d6650c25, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: b4f91c17960148d429f5f48fdc5f9506, type: 3}
+    - {fileID: 8300000, guid: 26c186b81f0d7c3499ff5d9ce409c036, type: 3}
   audioSource: {fileID: 1540009050}
   playFlashLight: 1
   playSpaceSuit: 0
@@ -14754,6 +14769,13 @@ MonoBehaviour:
   playGreenWire: 0
   playDoorHint: 0
   playPowerOn: 0
+  playDriveWarn: 0
+  playDriveWarnOnce: 1
+  playUploading: 0
+  playError1: 0
+  playError2: 0
+  playEasterEgg: 0
+  playError3: 0
 --- !u!1001 &1404281261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14761,10 +14783,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 462920550}
     m_Modifications:
-    - target: {fileID: 100000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
-      propertyPath: m_Name
-      value: Fence (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.969997
@@ -14820,6 +14838,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0800005
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
+      propertyPath: m_Name
+      value: Fence (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
@@ -15158,6 +15180,7 @@ MonoBehaviour:
     type: 3}
   driveCorrect: 0
   uploadComplete: 0
+  subtitleSystem: {fileID: 1403774168}
   rdButton: {fileID: 2116130330}
   gdButton: {fileID: 714427782}
   bdButton: {fileID: 507506201}
@@ -22410,10 +22433,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 462920550}
     m_Modifications:
-    - target: {fileID: 100000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
-      propertyPath: m_Name
-      value: Fence
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.828
@@ -22469,6 +22488,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}
+      propertyPath: m_Name
+      value: Fence
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 564a6e7683666244eb57e3011add82d1, type: 3}

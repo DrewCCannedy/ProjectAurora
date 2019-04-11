@@ -13,6 +13,8 @@ public class DataUpload : MonoBehaviour
     public bool uploadComplete;
     private float driveX = 41.818f, driveY = 0.75f, driveZ = 10.7f;
 
+    public SubtitleSystem subtitleSystem;
+
     public Button rdButton, gdButton, bdButton, ydButton;
 
     // Start is called before the first frame update
@@ -53,6 +55,7 @@ public class DataUpload : MonoBehaviour
         Debug.Log("You have plugged the correct drive!");
         player.GetComponent<Inventory>().hasRdrive = false;
         redDrive.tag = ("Untagged");
+        subtitleSystem.playUploading = true;
     }
 
     void PlugGreenDrive()
@@ -61,6 +64,8 @@ public class DataUpload : MonoBehaviour
         driveCorrect = false;
         Debug.Log("You have plugged the wrong drive!");
         player.GetComponent<Inventory>().hasGdrive = false;
+        subtitleSystem.playUploading = true;
+        subtitleSystem.playError2 = true;
     }
 
     void PlugBlueDrive()
@@ -69,6 +74,8 @@ public class DataUpload : MonoBehaviour
         driveCorrect = false;
         Debug.Log("You have plugged the wrong drive!");
         player.GetComponent<Inventory>().hasBdrive = false;
+        subtitleSystem.playUploading = true;
+        subtitleSystem.playError1 = true;
     }
 
     void PlugYellowDrive()
@@ -77,6 +84,8 @@ public class DataUpload : MonoBehaviour
         driveCorrect = false;
         Debug.Log("You have plugged the wrong drive!");
         player.GetComponent<Inventory>().hasYdrive = false;
+        subtitleSystem.playUploading = true;
+        subtitleSystem.playError1 = true;
     }
 
 }
