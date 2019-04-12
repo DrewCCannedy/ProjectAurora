@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 6d04fc58bbfd9d94f912e38f5e5bc549
+guid: 2c74e573a302fd045b0af9e6a8e9981d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Containers_Light
+    2100000: aiStandardSurface1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface388
+    4300000: pCube102
   externalObjects: {}
   materials:
     importMaterials: 1
