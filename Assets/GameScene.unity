@@ -3314,7 +3314,7 @@ GameObject:
   - component: {fileID: 407209523}
   - component: {fileID: 407209524}
   m_Layer: 0
-  m_Name: ShipAmbienceLeft
+  m_Name: ShipAmbienceTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3328,7 +3328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407209521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.76, y: -2, z: 45.02}
+  m_LocalPosition: {x: 11.76, y: 9.11, z: 30.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 618496699}
@@ -3344,7 +3344,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d8f9e3f57dbc9ea469e3092622b96862, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3442,7 +3442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9904238854cdd874ca66c2ea0efae2c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: d8f9e3f57dbc9ea469e3092622b96862, type: 3}
 --- !u!4 &410835172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 92ca049216bcb2f44bc9ea2edd3c94fb,
@@ -12595,13 +12595,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2f3912a80d1d67e4aae4e771b33979ce, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.307
+  m_Volume: 0.431
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 64
+  Priority: 62
   DopplerLevel: 1
   MinDistance: 14.56092
   MaxDistance: 500
