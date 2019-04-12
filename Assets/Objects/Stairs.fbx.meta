@@ -3,14 +3,12 @@ guid: 0b133cc0f6b15434f8c9562f3d0956e6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pCube8
-    100002: //RootNode
-    400000: pCube8
-    400002: //RootNode
-    2100000: lambert1
-    2300000: pCube8
-    3300000: pCube8
-    4300000: pCube8
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert3
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: polySurface362
   externalObjects: {}
   materials:
     importMaterials: 1
