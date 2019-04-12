@@ -2,6 +2,8 @@
 ## How add to the project
 - download git https://git-scm.com/downloads using 'git bash' makes it really easy to run the commands below
 - launch git bash and run the following commands
+- get into the location you would like to save the project
+- in the atec labs this will be `cd /c/Users/<yourNetId>/Desktop`
 - `git clone https://github.com/DrewCCannedy/ProjectAurora.git` copy the project from github onto your machine
 - `cd ProjectAurora` cd into the folder 
 - `git checkout -b <branchname>` name the branch your name
