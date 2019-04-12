@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6d04fc58bbfd9d94f912e38f5e5bc549
+guid: 52760ee4a559ebc4fbda262ab823cb0d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: Containers_Light
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface388
+    4300000: pCylinder50
   externalObjects: {}
   materials:
     importMaterials: 1
