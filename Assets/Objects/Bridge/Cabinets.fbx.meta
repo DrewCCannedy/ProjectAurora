@@ -60,7 +60,32 @@ ModelImporter:
     4300014: polySurface422
     4300016: temperaturepanel
     4300018: fridge
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert12
+    second: {fileID: 2100000, guid: 07b52f0893452554ebe8b518802015e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: bee2a98284daf0b46af51edf3f70ac20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: ff1e97824d210a843afe291eecba1000, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: bee2a98284daf0b46af51edf3f70ac20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert9
+    second: {fileID: 2100000, guid: ff1e97824d210a843afe291eecba1000, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
