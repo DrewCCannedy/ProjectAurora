@@ -8,7 +8,7 @@ public class Generator : MonoBehaviour
 
     GameObject player;
     public Interaction camera;
-    // public bool powerOn;
+    public bool atGenerator;
     public GameObject redWire;
     public GameObject greenWire;
     public GameObject blueWire;
@@ -50,37 +50,49 @@ public class Generator : MonoBehaviour
 
     void PlugRedWire()
     {
-        Instantiate(redWire, new Vector3(redPosX, redPosY, redPosZ), Quaternion.Euler(new Vector3(redRotX, redRotY, redRotZ)));
-        redPlugged = true;
-        Debug.Log("Red wire plugged.");
-        player.GetComponent<Inventory>().hasRwire = false;
-        redWire.tag = ("Untagged");
+        if (atGenerator == true)
+        {
+            Instantiate(redWire, new Vector3(redPosX, redPosY, redPosZ), Quaternion.Euler(new Vector3(redRotX, redRotY, redRotZ)));
+            redPlugged = true;
+            Debug.Log("Red wire plugged.");
+            player.GetComponent<Inventory>().hasRwire = false;
+            redWire.tag = ("Untagged");
+        }
     }
 
     void PlugGreenWire()
     {
-        Instantiate(greenWire, new Vector3(greenPosX, greenPosY, greenPosZ), Quaternion.Euler(new Vector3(greenRotX, greenRotY, greenRotZ)));
-        greenPlugged = true;
-        Debug.Log("Green wire plugged.");
-        player.GetComponent<Inventory>().hasGwire = false;
-        greenWire.tag = ("Untagged");
+        if (atGenerator == true)
+        { 
+            Instantiate(greenWire, new Vector3(greenPosX, greenPosY, greenPosZ), Quaternion.Euler(new Vector3(greenRotX, greenRotY, greenRotZ)));
+            greenPlugged = true;
+            Debug.Log("Green wire plugged.");
+            player.GetComponent<Inventory>().hasGwire = false;
+            greenWire.tag = ("Untagged");
+        }
     }
 
     void PlugBlueWire()
     {
-        Instantiate(blueWire, new Vector3(bluePosX, bluePosY, bluePosZ), Quaternion.Euler(new Vector3(blueRotX, blueRotY, blueRotZ)));
-        bluePlugged = true;
-        Debug.Log("Blue wire plugged.");
-        player.GetComponent<Inventory>().hasBwire = false;
-        blueWire.tag = ("Untagged");
+        if (atGenerator == true)
+        {
+            Instantiate(blueWire, new Vector3(bluePosX, bluePosY, bluePosZ), Quaternion.Euler(new Vector3(blueRotX, blueRotY, blueRotZ)));
+            bluePlugged = true;
+            Debug.Log("Blue wire plugged.");
+            player.GetComponent<Inventory>().hasBwire = false;
+            blueWire.tag = ("Untagged");
+        }
     }
 
     void PlugYellowWire()
     {
-        Instantiate(yellowWire, new Vector3(yellowPosX, yellowPosY, yellowPosZ), Quaternion.Euler(new Vector3(yellowRotX, yellowRotY, yellowRotZ)));
-        yellowPlugged = true;
-        Debug.Log("Yellow wire plugged.");
-        player.GetComponent<Inventory>().hasYwire = false;
-        yellowWire.tag = ("Untagged");
+        if (atGenerator == true)
+        {
+            Instantiate(yellowWire, new Vector3(yellowPosX, yellowPosY, yellowPosZ), Quaternion.Euler(new Vector3(yellowRotX, yellowRotY, yellowRotZ)));
+            yellowPlugged = true;
+            Debug.Log("Yellow wire plugged.");
+            player.GetComponent<Inventory>().hasYwire = false;
+            yellowWire.tag = ("Untagged");
+        }
     }
 }

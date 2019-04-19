@@ -20,6 +20,7 @@ public class Interaction : MonoBehaviour
     public AudioClip doorsmash1;
     public AudioClip doorsmash2;
     public AudioClip doorsmash3;
+    AudioSource suitPickup;
 
     public bool powerOn;
     bool powerOnTrigger = true;
@@ -34,6 +35,7 @@ public class Interaction : MonoBehaviour
         generator = GameObject.FindWithTag("Power");
         cockpit = GameObject.FindWithTag("Cockpit");
         keypad = GameObject.FindWithTag("Keypad");
+        suitPickup = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -70,13 +72,14 @@ public class Interaction : MonoBehaviour
             {
                 Debug.Log("Interacted with " + objectHit.collider.gameObject.name + ".");
                 player.GetComponent<Inventory>().inventoryMode = true;
+                generator.GetComponent<Generator>().atGenerator = true;
             }
 
             if (objectHit.collider.gameObject.tag == ("Cockpit") && Input.GetMouseButtonDown(0)) //Interaction with cockpit terminal in bridge
             {
                 Debug.Log("Interacted with " + objectHit.collider.gameObject.name + ".");
                 player.GetComponent<Inventory>().inventoryMode = true;
-                //cockpit.GetComponent<DataUpload>().PlugDrive();
+                cockpit.GetComponent<DataUpload>().atCockpit = true;
             }
 
             if (objectHit.collider.gameObject.tag == ("Door") && Input.GetMouseButtonDown(0)) //Doors will either be moved or destroyed upon interaction
@@ -133,7 +136,7 @@ public class Interaction : MonoBehaviour
                     
                     // play space suit AI audio
                     subtitleSystem.playSpaceSuit = true;
-
+                    suitPickup.Play();
                     Destroy(objectHit.collider.gameObject);
                 }
 
