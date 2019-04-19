@@ -11,6 +11,7 @@ public class DataUpload : MonoBehaviour
     public GameObject redDrive, greenDrive, blueDrive, yellowDrive;
     public bool driveCorrect;
     public bool uploadComplete;
+    public bool atCockpit;
     private float driveX = 41.818f, driveY = 0.75f, driveZ = 10.7f;
 
     public SubtitleSystem subtitleSystem;
@@ -33,11 +34,11 @@ public class DataUpload : MonoBehaviour
     {
         if (driveCorrect == true && playerCam.GetComponent<Interaction>().powerOn == true)
         {
-            //Debug.Log("Data uploading.");
+
         }
     }
 
-    public void PlugDrive()
+    /*public void PlugDrive()
     {
         if ((player.GetComponent<Inventory>().hasRdrive == true) && (Input.GetMouseButtonDown(0)))
         {
@@ -45,47 +46,74 @@ public class DataUpload : MonoBehaviour
             driveCorrect = true;
             Debug.Log("You have plugged the correct drive!");
             player.GetComponent<Inventory>().hasRdrive = false;
+            
         }
     }
+    */
 
     void PlugRedDrive()
     {
-        Instantiate(redDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
-        driveCorrect = true;
-        Debug.Log("You have plugged the correct drive!");
-        player.GetComponent<Inventory>().hasRdrive = false;
-        redDrive.tag = ("Untagged");
-        subtitleSystem.playUploading = true;
+        if (atCockpit == true)
+        {
+            Instantiate(redDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            driveCorrect = true;
+            Debug.Log("You have plugged the correct drive!");
+            player.GetComponent<Inventory>().hasRdrive = false;
+            if (playerCam.GetComponent<Interaction>().powerOn == true) //Only if power is on
+            {
+                redDrive.tag = ("Untagged");
+                subtitleSystem.playUploading = true;
+                uploadComplete = true;
+            }
+        }
     }
 
     void PlugGreenDrive()
     {
-        Instantiate(greenDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
-        driveCorrect = false;
-        Debug.Log("You have plugged the wrong drive!");
-        player.GetComponent<Inventory>().hasGdrive = false;
-        subtitleSystem.playUploading = true;
-        subtitleSystem.playError2 = true;
+        if (atCockpit == true)
+        {
+            Instantiate(greenDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            driveCorrect = false;
+            Debug.Log("You have plugged the wrong drive!");
+            player.GetComponent<Inventory>().hasGdrive = false;
+            if (playerCam.GetComponent<Interaction>().powerOn == true) //Only if power is on
+            {
+                subtitleSystem.playUploading = true;
+                subtitleSystem.playError2 = true;
+            }
+        }
     }
 
     void PlugBlueDrive()
     {
-        Instantiate(blueDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
-        driveCorrect = false;
-        Debug.Log("You have plugged the wrong drive!");
-        player.GetComponent<Inventory>().hasBdrive = false;
-        subtitleSystem.playUploading = true;
-        subtitleSystem.playError1 = true;
+        if (atCockpit == true)
+        {
+            Instantiate(blueDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            driveCorrect = false;
+            Debug.Log("You have plugged the wrong drive!");
+            player.GetComponent<Inventory>().hasBdrive = false;
+            if (playerCam.GetComponent<Interaction>().powerOn == true) //Only if power is on
+            {
+                subtitleSystem.playUploading = true;
+                subtitleSystem.playError1 = true;
+            }
+        }
     }
 
     void PlugYellowDrive()
     {
-        Instantiate(yellowDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
-        driveCorrect = false;
-        Debug.Log("You have plugged the wrong drive!");
-        player.GetComponent<Inventory>().hasYdrive = false;
-        subtitleSystem.playUploading = true;
-        subtitleSystem.playError1 = true;
+        if (atCockpit == true)
+        {
+            Instantiate(yellowDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            driveCorrect = false;
+            Debug.Log("You have plugged the wrong drive!");
+            player.GetComponent<Inventory>().hasYdrive = false;
+            if (playerCam.GetComponent<Interaction>().powerOn == true) //Only if power is on
+            {
+                subtitleSystem.playUploading = true;
+                subtitleSystem.playError1 = true;
+            }
+        }
     }
 
 }
