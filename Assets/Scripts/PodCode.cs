@@ -12,6 +12,7 @@ public class PodCode : MonoBehaviour
     string correctCode = "451";
     string memeCode = "666";
     public Text keypadText;
+    public AudioClip wrongCode;
 
     public SubtitleSystem subtitleSystem;
 
@@ -172,10 +173,12 @@ public class PodCode : MonoBehaviour
             if (code == correctCode)
             {
                 keypadText.text = ("Access Granted");
+                transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(wrongCode);
                 podDoor.SetActive(false);
             } else if (code == memeCode) {
-                keypadText.text = ("!!LICK MY TOES!!");
+                /*keypadText.text = ("!!LICK MY TOES!!");
                 subtitleSystem.playEasterEgg = true;
+                */
             }
             else
             {

@@ -15,9 +15,10 @@ public class Inventory : MonoBehaviour
     public Text oxygenText;
     public GameObject cursor, oxygenPanel;
 
-    public GameObject inventoryPanel, spacesuitButton, flashlightButton;
+    public GameObject inventoryPanel, spacesuitButton, flashlightButton, invisButton;
     public GameObject rwireButton, gwireButton, bwireButton, ywireButton;
     public GameObject rdriveButton, gdriveButton, bdriveButton, ydriveButton;
+
 
     int oxygenRemaining = 360;
 
@@ -49,6 +50,7 @@ public class Inventory : MonoBehaviour
         if (inventoryMode == true) //Toggling the inventory panel on and off
         {
             inventoryPanel.SetActive(true);
+            //invisButton.SetActive(true);
             //cursor.SetActive(true); Commented the cursor out as it seems to be interfering with the ability to press inventory buttons
             cursor.transform.position = Input.mousePosition;
         }
@@ -56,6 +58,7 @@ public class Inventory : MonoBehaviour
         if (inventoryMode == false)
         {
             inventoryPanel.SetActive(false);
+            //invisButton.SetActive(false);
             //cursor.SetActive(false);
         }
 
