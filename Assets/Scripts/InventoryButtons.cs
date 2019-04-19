@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InventoryButtons : MonoBehaviour
 {
-    public Button spacesuitButton, flashlightButton;
+    public Button spacesuitButton, flashlightButton, invisButton;
     public Button rwireButton, gwireButton, bwireButton, ywireButton;
     public Button rdriveButton, gdriveButton, bdriveButton, ydriveButton;
 
