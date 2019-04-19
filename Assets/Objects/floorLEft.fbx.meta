@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: 26de43fee7a6cf14f880befac6728c55
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: base
+    100002: //RootNode
+    100004: grateLeft
+    100006: grateRight
+    100008: grates
+    100010: left
+    100012: left 1
+    100014: left 2
+    100016: lightLeft1
+    100018: lightLeft10
+    100020: lightLeft11
+    100022: lightLeft12
+    100024: lightLeft2
+    100026: lightLeft3
+    100028: lightLeft4
+    100030: lightLeft5
+    100032: lightLeft6
+    100034: lightLeft7
+    100036: lightLeft8
+    100038: lightLeft9
+    100040: lightRight1
+    100042: lightRight2
+    100044: lightRight3
+    100046: lightRight4
+    100048: lights
+    100050: pipeCoverLeft1
+    100052: pipeCoverLeft2
+    100054: pipeCoverLeft3
+    100056: pipeCoverLeft4
+    100058: pipeCoverLeft5
+    100060: pipeCoverLeft6
+    100062: pipeCoverLeft7
+    100064: pipeCoverLeft8
+    100066: pipeCoverRight1
+    100068: pipeCoverRight2
+    100070: pipeCoverRight3
+    100072: pipeCoverRight4
+    100074: pipeCovers
+    100076: pipeLeft1
+    100078: pipeLeft2
+    100080: pipeLeft3
+    100082: pipeRight1
+    100084: pipeRight2
+    100086: pipeRight3
+    100088: pipes
+    100090: right
+    100092: right 1
+    100094: right 2
+    400000: base
+    400002: //RootNode
+    400004: grateLeft
+    400006: grateRight
+    400008: grates
+    400010: left
+    400012: left 1
+    400014: left 2
+    400016: lightLeft1
+    400018: lightLeft10
+    400020: lightLeft11
+    400022: lightLeft12
+    400024: lightLeft2
+    400026: lightLeft3
+    400028: lightLeft4
+    400030: lightLeft5
+    400032: lightLeft6
+    400034: lightLeft7
+    400036: lightLeft8
+    400038: lightLeft9
+    400040: lightRight1
+    400042: lightRight2
+    400044: lightRight3
+    400046: lightRight4
+    400048: lights
+    400050: pipeCoverLeft1
+    400052: pipeCoverLeft2
+    400054: pipeCoverLeft3
+    400056: pipeCoverLeft4
+    400058: pipeCoverLeft5
+    400060: pipeCoverLeft6
+    400062: pipeCoverLeft7
+    400064: pipeCoverLeft8
+    400066: pipeCoverRight1
+    400068: pipeCoverRight2
+    400070: pipeCoverRight3
+    400072: pipeCoverRight4
+    400074: pipeCovers
+    400076: pipeLeft1
+    400078: pipeLeft2
+    400080: pipeLeft3
+    400082: pipeRight1
+    400084: pipeRight2
+    400086: pipeRight3
+    400088: pipes
+    400090: right
+    400092: right 1
+    400094: right 2
+    2100000: Base
+    2100002: Pipes
+    2100004: Grate
+    2100006: pipeCovers1
+    2100008: Lights
+    2300000: base
+    2300002: grateLeft
+    2300004: grateRight
+    2300006: lightLeft1
+    2300008: lightLeft10
+    2300010: lightLeft11
+    2300012: lightLeft12
+    2300014: lightLeft2
+    2300016: lightLeft3
+    2300018: lightLeft4
+    2300020: lightLeft5
+    2300022: lightLeft6
+    2300024: lightLeft7
+    2300026: lightLeft8
+    2300028: lightLeft9
+    2300030: lightRight1
+    2300032: lightRight2
+    2300034: lightRight3
+    2300036: lightRight4
+    2300038: pipeCoverLeft1
+    2300040: pipeCoverLeft2
+    2300042: pipeCoverLeft3
+    2300044: pipeCoverLeft4
+    2300046: pipeCoverLeft5
+    2300048: pipeCoverLeft6
+    2300050: pipeCoverLeft7
+    2300052: pipeCoverLeft8
+    2300054: pipeCoverRight1
+    2300056: pipeCoverRight2
+    2300058: pipeCoverRight3
+    2300060: pipeCoverRight4
+    2300062: pipeLeft1
+    2300064: pipeLeft2
+    2300066: pipeLeft3
+    2300068: pipeRight1
+    2300070: pipeRight2
+    2300072: pipeRight3
+    3300000: base
+    3300002: grateLeft
+    3300004: grateRight
+    3300006: lightLeft1
+    3300008: lightLeft10
+    3300010: lightLeft11
+    3300012: lightLeft12
+    3300014: lightLeft2
+    3300016: lightLeft3
+    3300018: lightLeft4
+    3300020: lightLeft5
+    3300022: lightLeft6
+    3300024: lightLeft7
+    3300026: lightLeft8
+    3300028: lightLeft9
+    3300030: lightRight1
+    3300032: lightRight2
+    3300034: lightRight3
+    3300036: lightRight4
+    3300038: pipeCoverLeft1
+    3300040: pipeCoverLeft2
+    3300042: pipeCoverLeft3
+    3300044: pipeCoverLeft4
+    3300046: pipeCoverLeft5
+    3300048: pipeCoverLeft6
+    3300050: pipeCoverLeft7
+    3300052: pipeCoverLeft8
+    3300054: pipeCoverRight1
+    3300056: pipeCoverRight2
+    3300058: pipeCoverRight3
+    3300060: pipeCoverRight4
+    3300062: pipeLeft1
+    3300064: pipeLeft2
+    3300066: pipeLeft3
+    3300068: pipeRight1
+    3300070: pipeRight2
+    3300072: pipeRight3
+    4300000: base
+    4300002: pipeLeft1
+    4300004: pipeLeft2
+    4300006: pipeLeft3
+    4300008: pipeRight1
+    4300010: pipeRight2
+    4300012: pipeRight3
+    4300014: grateLeft
+    4300016: grateRight
+    4300018: pipeCoverLeft1
+    4300020: pipeCoverLeft2
+    4300022: pipeCoverLeft3
+    4300024: pipeCoverLeft4
+    4300026: pipeCoverLeft5
+    4300028: pipeCoverLeft6
+    4300030: pipeCoverLeft7
+    4300032: pipeCoverLeft8
+    4300034: pipeCoverRight1
+    4300036: pipeCoverRight2
+    4300038: pipeCoverRight3
+    4300040: pipeCoverRight4
+    4300042: lightLeft1
+    4300044: lightLeft2
+    4300046: lightLeft3
+    4300048: lightLeft4
+    4300050: lightLeft5
+    4300052: lightLeft6
+    4300054: lightLeft7
+    4300056: lightLeft8
+    4300058: lightLeft9
+    4300060: lightLeft10
+    4300062: lightLeft11
+    4300064: lightLeft12
+    4300066: lightRight1
+    4300068: lightRight2
+    4300070: lightRight3
+    4300072: lightRight4
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: 2b9f122937571a24bb9863a4a6e6148a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grate
+    second: {fileID: 2100000, guid: d8ded54bd8c5dfd4d8b0a34fc2e499b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lights
+    second: {fileID: 2100000, guid: 2b9f122937571a24bb9863a4a6e6148a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipes
+    second: {fileID: 2100000, guid: 2b9f122937571a24bb9863a4a6e6148a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipeCovers1
+    second: {fileID: 2100000, guid: 2b9f122937571a24bb9863a4a6e6148a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
