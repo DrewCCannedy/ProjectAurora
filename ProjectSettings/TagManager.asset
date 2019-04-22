@@ -12,6 +12,7 @@ TagManager:
   - Cockpit
   - Inventory
   - Keypad
+  - Voicelines
   layers:
   - Default
   - TransparentFX

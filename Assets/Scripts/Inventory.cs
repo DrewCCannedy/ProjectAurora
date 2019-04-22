@@ -13,11 +13,14 @@ public class Inventory : MonoBehaviour
 
     public bool inventoryMode;
     public Text oxygenText;
-    public GameObject cursor, oxygenPanel;
+    public GameObject oxygenPanel, hudFrame;
 
     public GameObject inventoryPanel, spacesuitButton, flashlightButton, invisButton;
     public GameObject rwireButton, gwireButton, bwireButton, ywireButton;
     public GameObject rdriveButton, gdriveButton, bdriveButton, ydriveButton;
+
+    public Button invis;
+    GameObject keypad;
 
 
     int oxygenRemaining = 360;
@@ -26,12 +29,14 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         InvokeRepeating("DecreaseOxygen", 1.0f, 1.0f);
+        invis.onClick.AddListener(CloseCurrentPanel);
+        keypad = GameObject.FindWithTag("Keypad"); //Needs to keep track of keypad so both panels are not open at the same time
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("i")) //I key enters inventory mode
+        if (Input.GetKeyDown("i") && keypad.GetComponent<PodCode>().keypadMode == false) //I key enters inventory mode
         {
             Debug.Log("Inventory key pressed.");
             if (inventoryMode == false)
@@ -50,21 +55,19 @@ public class Inventory : MonoBehaviour
         if (inventoryMode == true) //Toggling the inventory panel on and off
         {
             inventoryPanel.SetActive(true);
-            //invisButton.SetActive(true);
-            //cursor.SetActive(true); Commented the cursor out as it seems to be interfering with the ability to press inventory buttons
-            cursor.transform.position = Input.mousePosition;
+            invisButton.SetActive(true);
         }
 
         if (inventoryMode == false)
         {
             inventoryPanel.SetActive(false);
-            //invisButton.SetActive(false);
-            //cursor.SetActive(false);
+            invisButton.SetActive(false);
         }
 
 
         if (hasSpacesuit == true) //Showing the buttons for each item only if the player has picked them up
         {
+            hudFrame.SetActive(true);
             oxygenPanel.SetActive(true);
             if (inventoryMode == true)
             {
@@ -165,5 +168,17 @@ public class Inventory : MonoBehaviour
             oxygenRemaining -= 1;
             oxygenText.text = ("Oxygen: " + oxygenRemaining.ToString());
         }
+
+        if (oxygenRemaining < 1)
+        {
+            //Lose state
+            Debug.Log("Oxygen depleted. Game over.");
+        }
+    }
+
+    void CloseCurrentPanel()
+    {
+        Debug.Log("Invisible button pressed, inventory script.");
+        inventoryMode = false;
     }
 }

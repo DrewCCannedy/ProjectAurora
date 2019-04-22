@@ -61,10 +61,12 @@ public class Interaction : MonoBehaviour
         }
 
         // play green wire sounds
-        if (wiresFound == 3) {
+        
+        if (wiresFound == 3 && generator.GetComponent<Generator>().greenPlugged == false) {
             subtitleSystem.playGreenWire = true;
             wiresFound++;
         }
+        
 
         // play powerOn sound
         if (powerOn && powerOnTrigger) {
@@ -161,10 +163,9 @@ public class Interaction : MonoBehaviour
             if (objectHit.collider.gameObject.tag == ("Keypad")) //Occurs if escape pod keypad is interacted with
             {
                 reticle.color = reticleMagenta;
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && player.GetComponent<Inventory>().inventoryMode == false)
                 {
                     Debug.Log("Interacted with keypad.");
-                    reticle.color = reticleMagenta;
                     keypad.GetComponent<PodCode>().keypadMode = true;
                 }
 
@@ -271,6 +272,7 @@ public class Interaction : MonoBehaviour
                 }
             }
         }
+
         else { reticle.color = reticleCyan; }
     }
 }
