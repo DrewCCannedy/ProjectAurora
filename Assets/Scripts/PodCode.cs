@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class PodCode : MonoBehaviour
 {
     public bool keypadMode;
-    public GameObject keypadPanel, podDoor, playerCam;
+    public GameObject keypadPanel, podDoor, playerCam, invisButton;
     public Button b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bDel, bEnter;
     string code;
     string correctCode = "451";
     string memeCode = "666";
     public Text keypadText;
     public AudioClip wrongCode;
+    public Button invis;
 
     public SubtitleSystem subtitleSystem;
 
@@ -32,6 +33,7 @@ public class PodCode : MonoBehaviour
         b9.onClick.AddListener(Add9);
         bDel.onClick.AddListener(Delete);
         bEnter.onClick.AddListener(EnterCode);
+        invis.onClick.AddListener(CloseCurrentPanel);
     }
 
     // Update is called once per frame
@@ -46,11 +48,13 @@ public class PodCode : MonoBehaviour
         if (keypadMode == true) //Toggling the keypad panel on and off
         {
             keypadPanel.SetActive(true);
+            invisButton.SetActive(true);
         }
 
         if (keypadMode == false)
         {
             keypadPanel.SetActive(false);
+            invisButton.SetActive(false);
         }
 
         
@@ -175,10 +179,6 @@ public class PodCode : MonoBehaviour
                 keypadText.text = ("Access Granted");
                 transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(wrongCode);
                 podDoor.SetActive(false);
-            } else if (code == memeCode) {
-                /*keypadText.text = ("!!LICK MY TOES!!");
-                subtitleSystem.playEasterEgg = true;
-                */
             }
             else
             {
@@ -187,6 +187,12 @@ public class PodCode : MonoBehaviour
             }
         }
 
+    }
+
+    void CloseCurrentPanel()
+    {
+        Debug.Log("Invisible button pressed, pod code script.");
+        keypadMode = false;
     }
 
 
