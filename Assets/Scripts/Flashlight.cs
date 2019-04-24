@@ -16,7 +16,7 @@ public class Flashlight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e")) {
+        if (Input.GetKeyDown("f")) {
             GetComponent<Light>().enabled = !GetComponent<Light>().enabled;
             toggleLight.Play();
         }
