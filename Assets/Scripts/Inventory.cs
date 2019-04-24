@@ -166,7 +166,7 @@ public class Inventory : MonoBehaviour
         if (hasSpacesuit == true && oxygenRemaining > 0)
         {
             oxygenRemaining -= 1;
-            oxygenText.text = ("Oxygen: " + oxygenRemaining.ToString());
+            oxygenText.text = (oxygenRemaining.ToString());
         }
 
         if (oxygenRemaining < 1)
