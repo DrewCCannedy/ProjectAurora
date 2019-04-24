@@ -177,8 +177,13 @@ public class PodCode : MonoBehaviour
             if (code == correctCode)
             {
                 keypadText.text = ("Access Granted");
-                transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(wrongCode);
                 podDoor.SetActive(false);
+                subtitleSystem.playWinState = true;
+            }
+            else if (code == memeCode)
+            {
+                keypadText.text = ("TOESTOESTOES");
+                subtitleSystem.playEasterEgg = true;
             }
             else
             {

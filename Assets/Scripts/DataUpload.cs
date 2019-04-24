@@ -34,7 +34,7 @@ public class DataUpload : MonoBehaviour
     {
         if (driveCorrect == true && playerCam.GetComponent<Interaction>().powerOn == true)
         {
-
+            
         }
     }
 
@@ -63,6 +63,7 @@ public class DataUpload : MonoBehaviour
             {
                 redDrive.tag = ("Untagged");
                 subtitleSystem.playUploading = true;
+                subtitleSystem.playCode = true;
                 uploadComplete = true;
             }
         }

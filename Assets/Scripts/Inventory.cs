@@ -19,10 +19,12 @@ public class Inventory : MonoBehaviour
     public GameObject rwireButton, gwireButton, bwireButton, ywireButton;
     public GameObject rdriveButton, gdriveButton, bdriveButton, ydriveButton;
 
+    public SubtitleSystem subtitleSystem;
+
     public Button invis;
     GameObject keypad;
 
-
+    [SerializeField]
     int oxygenRemaining = 360;
 
     // Start is called before the first frame update
@@ -36,6 +38,15 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (oxygenRemaining == 30 && hasSpacesuit) {
+            subtitleSystem.play30 = true;
+        }
+        if (oxygenRemaining == 90 && hasSpacesuit) {
+            subtitleSystem.play90 = true;
+        }
+        if (oxygenRemaining == 270 && hasSpacesuit) {
+            subtitleSystem.play270 = true;
+        }
         if (Input.GetKeyDown("i") && keypad.GetComponent<PodCode>().keypadMode == false) //I key enters inventory mode
         {
             Debug.Log("Inventory key pressed.");

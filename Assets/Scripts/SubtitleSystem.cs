@@ -43,6 +43,12 @@ public class SubtitleSystem : MonoBehaviour
     public bool playError2 = false;
     public bool playEasterEgg = false;
     public bool playError3 = false;
+    public bool play30 = false;
+    public bool play90 = false;
+    public bool play270 = false;
+
+    public bool playWinState = false;
+    public bool playCode = false;
 
     // Start is called before the first frame update
     void Start()
@@ -82,7 +88,6 @@ public class SubtitleSystem : MonoBehaviour
         subtitles.Add("AI: Looks like the power’s out.");
         subtitles.Add("AI: You’re a smart girl, I’m sure you can get that backup generator running.");
         subtitles.Add("AI: Well, you have to otherwise we’re stranded.");
-        subtitles.Add("AI: Your workbench should have the cables you need to connect it.");
         subtitleSections.Add(subtitles);
 
         // Green Wire Text [4]
@@ -109,8 +114,8 @@ public class SubtitleSystem : MonoBehaviour
 
         // Drive Warn Text [7]
         subtitles = new List<string>();
-        subtitles.Add("AI: Make sure you pick the right drive...");
-        subtitles.Add("AI: I don't know which one you'd put HYPER SPACE ANOMOLIE data on");
+        subtitles.Add("AI: I hope you remember which drive it is");
+        subtitles.Add("AI: Don't ask me. I don't know which one you'd put MARS terraforming data on.");
         subtitleSections.Add(subtitles);
 
         // Uploading Text [8]
@@ -133,10 +138,43 @@ public class SubtitleSystem : MonoBehaviour
         subtitles.Add("AI: QUENTIN TARANTINO QUENTIN TARANTINO QUENTIN TARANTINO");
         subtitleSections.Add(subtitles);
 
-        // Easter Egg Text [12]
+        // Error 3 Text [12]
         subtitles = new List<string>();
         subtitles.Add("AI: Wait, you seriously don't know the code to your own escape pod?");
         subtitles.Add("AI: There has to be somewhere you can find it. Hurry!");
+        subtitleSections.Add(subtitles);
+
+        // Win State Text [13]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Finally! Took you long enough.");
+        subtitles.Add("AI: Wait..You are coming back for my AI chip, right?.....RIGHT?!");
+        subtitleSections.Add(subtitles);
+
+        // Win State Text [14]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Finally! Took you long enough.");
+        subtitles.Add("AI: Wait..You are coming back for my AI chip, right?.....RIGHT?!");
+        subtitleSections.Add(subtitles);
+
+        // Correct Drive Text [15]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Here we are. I can see all your files. Uploading research data now.");
+        subtitleSections.Add(subtitles);
+
+        // Warning 30 Text [16]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Suit oxygen levels down to 0.83%, 30 seconds left.");
+        subtitles.Add("AI: If you don't have a plan, at least its been fun.");
+        subtitleSections.Add(subtitles);
+
+        // Warning 90 Text [17]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Suit oxygen levels down to 2.5%, 90 seconds left.");
+        subtitleSections.Add(subtitles);
+
+        // Warning 270 Text [18]
+        subtitles = new List<string>();
+        subtitles.Add("AI: Suit oxygen levels down to 5%, you have about 3 minutes.");
         subtitleSections.Add(subtitles);
     }
 
@@ -145,6 +183,12 @@ public class SubtitleSystem : MonoBehaviour
     {
         if (playIntro) {
             playIntro = PlayAudioSection(0);
+        } else if (play30) {
+            play30 = PlayAudioSection(16);
+        } else if (play90) {
+            play90 = PlayAudioSection(17);
+        } else if (play270) {
+            play270 = PlayAudioSection(18);
         } else if (playFlashLight && Time.time > 18f) {
             playFlashLight = PlayAudioSection(2);
         } else if (playDoorHint && !playFlashLight) {
@@ -168,7 +212,11 @@ public class SubtitleSystem : MonoBehaviour
         } else if (playEasterEgg) {
             playEasterEgg = PlayAudioSection(11);
         } else if (playError3) {
-            playError3 =PlayAudioSection(12);
+            playError3 = PlayAudioSection(12);
+        } else if (playWinState) {
+            playWinState = PlayAudioSection(14);
+        } else if (playCode) {
+            playCode = PlayAudioSection(15);
         } else {
             text.text = "";
         }
