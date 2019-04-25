@@ -12,7 +12,7 @@ public class DataUpload : MonoBehaviour
     public bool driveCorrect;
     public bool uploadComplete;
     public bool atCockpit;
-    private float driveX = 41.818f, driveY = 0.75f, driveZ = 10.7f;
+    private float driveX = 41.4914f, driveY = 1.0067f, driveZ = 9.0347f;
 
     public SubtitleSystem subtitleSystem;
 
@@ -38,24 +38,11 @@ public class DataUpload : MonoBehaviour
         }
     }
 
-    /*public void PlugDrive()
-    {
-        if ((player.GetComponent<Inventory>().hasRdrive == true) && (Input.GetMouseButtonDown(0)))
-        {
-            Instantiate(redDrive, new Vector3(44.1f, 0.75f, 10.7f), Quaternion.Euler(new Vector3(0, 90, 0)));
-            driveCorrect = true;
-            Debug.Log("You have plugged the correct drive!");
-            player.GetComponent<Inventory>().hasRdrive = false;
-            
-        }
-    }
-    */
-
     void PlugRedDrive()
     {
         if (atCockpit == true)
         {
-            Instantiate(redDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            Instantiate(redDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 1000, 0)));
             driveCorrect = true;
             Debug.Log("You have plugged the correct drive!");
             player.GetComponent<Inventory>().hasRdrive = false;
@@ -73,7 +60,7 @@ public class DataUpload : MonoBehaviour
     {
         if (atCockpit == true)
         {
-            Instantiate(greenDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            Instantiate(greenDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 100, 0)));
             driveCorrect = false;
             Debug.Log("You have plugged the wrong drive!");
             player.GetComponent<Inventory>().hasGdrive = false;
@@ -89,7 +76,7 @@ public class DataUpload : MonoBehaviour
     {
         if (atCockpit == true)
         {
-            Instantiate(blueDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            Instantiate(blueDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 100, 0)));
             driveCorrect = false;
             Debug.Log("You have plugged the wrong drive!");
             player.GetComponent<Inventory>().hasBdrive = false;
@@ -105,7 +92,7 @@ public class DataUpload : MonoBehaviour
     {
         if (atCockpit == true)
         {
-            Instantiate(yellowDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 90, 0)));
+            Instantiate(yellowDrive, new Vector3(driveX, driveY, driveZ), Quaternion.Euler(new Vector3(0, 100, 0)));
             driveCorrect = false;
             Debug.Log("You have plugged the wrong drive!");
             player.GetComponent<Inventory>().hasYdrive = false;
