@@ -10,6 +10,7 @@ public class TurnLightsOnWhenPowerOn : MonoBehaviour
     public GameObject[] doorLights;
     public Material doorLightOn;
     public GameObject[] probes;
+    public GameObject[] emmisives;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,11 @@ public class TurnLightsOnWhenPowerOn : MonoBehaviour
             child.GetComponent<Light>().enabled = false;
         }
         foreach (GameObject probe in probes) {
-                probe.GetComponent<ReflectionProbe>().enabled = false;
+            probe.GetComponent<ReflectionProbe>().enabled = false;
+        }
+
+        foreach (GameObject light in emmisives) {
+            light.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
         }
     }
 
@@ -36,6 +41,9 @@ public class TurnLightsOnWhenPowerOn : MonoBehaviour
                 probe.GetComponent<ReflectionProbe>().enabled = true;
             }
             lightsOn = true;
+            foreach (GameObject light in emmisives) {
+                light.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+            }
         }
     }
 }
