@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: c22820c1ed3ffaf4aad29f01107b4af4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: dirt_in_pot
+    100002: flower_3a
+    100004: flower_3a1
+    100006: flower_3a2
+    100008: flower_3a4
+    100010: flower_3a5
+    100012: flower_3a6
+    100014: flower_3a7
+    100016: flower_3a8
+    100018: flower_3a9
+    100020: flower_pot
+    100022: //RootNode
+    100024: pointyleaf_10
+    100026: pointyleaf_11
+    100028: pointyleaf_12
+    100030: pointyleaf_13
+    100032: pointyleaf_14
+    100034: pointyleaf_15
+    100036: pointyleaf_16
+    100038: pointyleaf_2
+    100040: pointyleaf_9
+    400000: dirt_in_pot
+    400002: flower_3a
+    400004: flower_3a1
+    400006: flower_3a2
+    400008: flower_3a4
+    400010: flower_3a5
+    400012: flower_3a6
+    400014: flower_3a7
+    400016: flower_3a8
+    400018: flower_3a9
+    400020: flower_pot
+    400022: //RootNode
+    400024: pointyleaf_10
+    400026: pointyleaf_11
+    400028: pointyleaf_12
+    400030: pointyleaf_13
+    400032: pointyleaf_14
+    400034: pointyleaf_15
+    400036: pointyleaf_16
+    400038: pointyleaf_2
+    400040: pointyleaf_9
+    2100000: Dirt
+    2100002: FLowerPot_1
+    2100004: phong9
+    2100006: M_Flower
+    2300000: dirt_in_pot
+    2300002: flower_3a
+    2300004: flower_3a1
+    2300006: flower_3a2
+    2300008: flower_3a4
+    2300010: flower_3a5
+    2300012: flower_3a6
+    2300014: flower_3a7
+    2300016: flower_3a8
+    2300018: flower_3a9
+    2300020: flower_pot
+    2300022: pointyleaf_10
+    2300024: pointyleaf_11
+    2300026: pointyleaf_12
+    2300028: pointyleaf_13
+    2300030: pointyleaf_14
+    2300032: pointyleaf_15
+    2300034: pointyleaf_16
+    2300036: pointyleaf_2
+    2300038: pointyleaf_9
+    3300000: dirt_in_pot
+    3300002: flower_3a
+    3300004: flower_3a1
+    3300006: flower_3a2
+    3300008: flower_3a4
+    3300010: flower_3a5
+    3300012: flower_3a6
+    3300014: flower_3a7
+    3300016: flower_3a8
+    3300018: flower_3a9
+    3300020: flower_pot
+    3300022: pointyleaf_10
+    3300024: pointyleaf_11
+    3300026: pointyleaf_12
+    3300028: pointyleaf_13
+    3300030: pointyleaf_14
+    3300032: pointyleaf_15
+    3300034: pointyleaf_16
+    3300036: pointyleaf_2
+    3300038: pointyleaf_9
+    4300000: dirt_in_pot
+    4300002: flower_pot
+    4300004: pointyleaf_9
+    4300006: pointyleaf_10
+    4300008: pointyleaf_11
+    4300010: pointyleaf_12
+    4300012: pointyleaf_13
+    4300014: pointyleaf_14
+    4300016: pointyleaf_15
+    4300018: pointyleaf_16
+    4300020: pointyleaf_2
+    4300022: flower_3a
+    4300024: flower_3a1
+    4300026: flower_3a2
+    4300028: flower_3a4
+    4300030: flower_3a5
+    4300032: flower_3a6
+    4300034: flower_3a7
+    4300036: flower_3a8
+    4300038: flower_3a9
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
