@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: 1405ff6539887c245b988063557294f1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: dirt_in_pot
+    100002: flower_pot
+    100004: //RootNode
+    100006: pointyleaf_17
+    100008: pointyleaf_18
+    100010: pointyleaf_19
+    100012: pointyleaf_6
+    100014: pointyleaf_7
+    100016: pointyleaf_8
+    400000: dirt_in_pot
+    400002: flower_pot
+    400004: //RootNode
+    400006: pointyleaf_17
+    400008: pointyleaf_18
+    400010: pointyleaf_19
+    400012: pointyleaf_6
+    400014: pointyleaf_7
+    400016: pointyleaf_8
+    2100000: M_PointyPlant_2
+    2100002: Dirt
+    2100004: FLowerPot_1
+    2300000: dirt_in_pot
+    2300002: flower_pot
+    2300004: pointyleaf_17
+    2300006: pointyleaf_18
+    2300008: pointyleaf_19
+    2300010: pointyleaf_6
+    2300012: pointyleaf_7
+    2300014: pointyleaf_8
+    3300000: dirt_in_pot
+    3300002: flower_pot
+    3300004: pointyleaf_17
+    3300006: pointyleaf_18
+    3300008: pointyleaf_19
+    3300010: pointyleaf_6
+    3300012: pointyleaf_7
+    3300014: pointyleaf_8
+    4300000: pointyleaf_6
+    4300002: pointyleaf_7
+    4300004: pointyleaf_8
+    4300006: dirt_in_pot
+    4300008: flower_pot
+    4300010: pointyleaf_17
+    4300012: pointyleaf_18
+    4300014: pointyleaf_19
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dirt
+    second: {fileID: 2100000, guid: e770c22924ea13742b84114278360900, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FLowerPot_1
+    second: {fileID: 2100000, guid: 96a2a5f187edc7f4dae007202b22a1de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_PointyPlant_2
+    second: {fileID: 2100000, guid: 52c83f722e28348488091a9077212294, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
