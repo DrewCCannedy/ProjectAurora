@@ -28533,7 +28533,7 @@ MonoBehaviour:
   doorsmash2: {fileID: 8300000, guid: ee02adcba1c267444889e5b741816139, type: 3}
   doorsmash3: {fileID: 8300000, guid: 2c27df70784dbf24ebb261d66ce82ed1, type: 3}
   suitPickup: {fileID: 8300000, guid: f6d4f27d04fcfd64093bcf7874be55ce, type: 3}
-  powerOn: 1
+  powerOn: 0
 --- !u!108 &611928010
 Light:
   m_ObjectHideFlags: 0
