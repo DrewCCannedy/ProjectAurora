@@ -814,6 +814,7 @@ GameObject:
   - component: {fileID: 16203960}
   - component: {fileID: 16203959}
   - component: {fileID: 16203962}
+  - component: {fileID: 16203963}
   m_Layer: 0
   m_Name: Pod Keypad
   m_TagString: Keypad
@@ -925,7 +926,113 @@ MonoBehaviour:
   keypadText: {fileID: 1857910360}
   wrongCode: {fileID: 8300000, guid: 6b1a1f42836691546b319406d4f44ff5, type: 3}
   invis: {fileID: 1751091030}
+  keypad0: {fileID: 8300000, guid: 56a737e9c5b81c1488c5c8cce49bebfb, type: 3}
+  keypad1: {fileID: 8300000, guid: 5c65a1ce7104708458edecd2217c6e6d, type: 3}
+  keypad2: {fileID: 8300000, guid: e97a651dc2bd2924b9fbd811b9a5da48, type: 3}
+  keypad3: {fileID: 8300000, guid: b065808076020634783c19e6efba5777, type: 3}
+  keypad4: {fileID: 8300000, guid: 0464eae5240332f43883b884f92bb8a8, type: 3}
+  keypad5: {fileID: 8300000, guid: fdaf036bf7a1bf546a0756a98445ab90, type: 3}
+  keypad6: {fileID: 8300000, guid: f4e66fca7499a18469250fe21c1cc274, type: 3}
+  keypad7: {fileID: 8300000, guid: a2ea82e173082434bbb46b0afae74461, type: 3}
+  keypad8: {fileID: 8300000, guid: a10cadf9bfee05f40b54cb6657aa0ade, type: 3}
+  keypad9: {fileID: 8300000, guid: 74488fa868ab2644da6b503d5c1e065c, type: 3}
   subtitleSystem: {fileID: 1403774168}
+--- !u!82 &16203963
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16203957}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 74488fa868ab2644da6b503d5c1e065c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 205
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &19700968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 6d04fc58bbfd9d94f912e38f5e5bc549,
@@ -28426,7 +28533,7 @@ MonoBehaviour:
   doorsmash2: {fileID: 8300000, guid: ee02adcba1c267444889e5b741816139, type: 3}
   doorsmash3: {fileID: 8300000, guid: 2c27df70784dbf24ebb261d66ce82ed1, type: 3}
   suitPickup: {fileID: 8300000, guid: f6d4f27d04fcfd64093bcf7874be55ce, type: 3}
-  powerOn: 0
+  powerOn: 1
 --- !u!108 &611928010
 Light:
   m_ObjectHideFlags: 0
