@@ -119776,6 +119776,8 @@ MonoBehaviour:
   driveCorrect: 0
   uploadComplete: 0
   atCockpit: 0
+  drivePlaced: 0
+  whichDrive: 0
   subtitleSystem: {fileID: 1403774168}
   rdButton: {fileID: 2116130330}
   gdButton: {fileID: 714427782}
