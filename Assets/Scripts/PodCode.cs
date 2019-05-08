@@ -10,7 +10,6 @@ public class PodCode : MonoBehaviour
     public Button b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bDel, bEnter;
     string code;
     string correctCode = "451";
-    string memeCode = "666";
     public Text keypadText;
     public AudioClip wrongCode;
     public Button invis;
@@ -25,6 +24,9 @@ public class PodCode : MonoBehaviour
     public AudioClip keypad8;
     public AudioClip keypad9;
     public SubtitleSystem subtitleSystem;
+    public bool winState;
+    public Image whiteScreen;
+    public GameObject white;
 
     // Start is called before the first frame update
     void Start()
@@ -66,7 +68,11 @@ public class PodCode : MonoBehaviour
             invisButton.SetActive(false);
         }
 
-        
+        if (winState == true)
+        {
+            white.SetActive(true);
+            whiteScreen.CrossFadeAlpha(1.0f, time, false);
+        }
     }
 
     void Add0()
@@ -199,11 +205,7 @@ public class PodCode : MonoBehaviour
                 keypadText.text = ("Access Granted");
                 podDoor.SetActive(false);
                 subtitleSystem.playWinState = true;
-            }
-            else if (code == memeCode)
-            {
-                keypadText.text = ("TOESTOESTOES");
-                subtitleSystem.playEasterEgg = true;
+                winState = true;
             }
             else
             {

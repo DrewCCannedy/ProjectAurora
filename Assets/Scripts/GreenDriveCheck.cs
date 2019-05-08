@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlueDriveCheck : MonoBehaviour
+public class GreenDriveCheck : MonoBehaviour
 {
     GameObject player;
     GameObject cockpit;
@@ -17,9 +17,9 @@ public class BlueDriveCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cockpit.GetComponent<DataUpload>().whichDrive != 3 && cockpit.GetComponent<DataUpload>().drivePlaced == true)
+        if (cockpit.GetComponent<DataUpload>().whichDrive != 2 && cockpit.GetComponent<DataUpload>().drivePlaced == true)
         {
-            player.GetComponent<Inventory>().hasBdrive = true;
+            player.GetComponent<Inventory>().hasGdrive = true;
             Destroy(this.gameObject);
         }
     }
