@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: eee50b9a86ac31f40b5e8ea27008f448
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: floorFork
+    100002: floorFork_lights
+    100004: //RootNode
+    100006: left
+    100008: lightLeft1
+    100010: lightLeft2
+    100012: lightLeft3
+    100014: lightLeft4
+    100016: lightRight1
+    100018: lightRight2
+    100020: lightRight3
+    100022: lightRight4
+    100024: lights
+    100026: lightTop1
+    100028: lightTop10
+    100030: lightTop2
+    100032: lightTop3
+    100034: lightTop4
+    100036: lightTop5
+    100038: lightTop6
+    100040: lightTop7
+    100042: lightTop8
+    100044: lightTop9
+    100046: right
+    100048: top
+    100050: transform11
+    100052: transform12
+    100054: transform13
+    100056: transform14
+    100058: transform15
+    100060: transform16
+    100062: transform17
+    100064: transform18
+    100066: transform19
+    100068: transform20
+    100070: transform21
+    100072: transform22
+    100074: transform23
+    100076: transform24
+    100078: transform25
+    100080: transform26
+    100082: transform27
+    100084: transform28
+    400000: floorFork
+    400002: floorFork_lights
+    400004: //RootNode
+    400006: left
+    400008: lightLeft1
+    400010: lightLeft2
+    400012: lightLeft3
+    400014: lightLeft4
+    400016: lightRight1
+    400018: lightRight2
+    400020: lightRight3
+    400022: lightRight4
+    400024: lights
+    400026: lightTop1
+    400028: lightTop10
+    400030: lightTop2
+    400032: lightTop3
+    400034: lightTop4
+    400036: lightTop5
+    400038: lightTop6
+    400040: lightTop7
+    400042: lightTop8
+    400044: lightTop9
+    400046: right
+    400048: top
+    400050: transform11
+    400052: transform12
+    400054: transform13
+    400056: transform14
+    400058: transform15
+    400060: transform16
+    400062: transform17
+    400064: transform18
+    400066: transform19
+    400068: transform20
+    400070: transform21
+    400072: transform22
+    400074: transform23
+    400076: transform24
+    400078: transform25
+    400080: transform26
+    400082: transform27
+    400084: transform28
+    2100000: Lights
+    2300000: floorFork_lights
+    3300000: floorFork_lights
+    4300000: floorFork_lights
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lights
+    second: {fileID: 2100000, guid: f28b95e6d46de1140a82a24b98824385, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

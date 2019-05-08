@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: ac364c3700ac811409dbaff3c6d37ced
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: floorCornerRight
+    100002: floorCornerRight_lights
+    100004: //RootNode
+    100006: left
+    100008: lightLeft1
+    100010: lightLeft2
+    100012: lightLeft3
+    100014: lightLeft4
+    100016: lightRight1
+    100018: lightRight10
+    100020: lightRight11
+    100022: lightRight12
+    100024: lightRight2
+    100026: lightRight3
+    100028: lightRight4
+    100030: lightRight5
+    100032: lightRight6
+    100034: lightRight7
+    100036: lightRight8
+    100038: lightRight9
+    100040: lights
+    100042: right
+    100044: transform45
+    100046: transform46
+    100048: transform47
+    100050: transform48
+    100052: transform49
+    100054: transform50
+    100056: transform51
+    100058: transform52
+    100060: transform53
+    100062: transform54
+    100064: transform55
+    100066: transform56
+    100068: transform57
+    100070: transform58
+    100072: transform59
+    100074: transform60
+    400000: floorCornerRight
+    400002: floorCornerRight_lights
+    400004: //RootNode
+    400006: left
+    400008: lightLeft1
+    400010: lightLeft2
+    400012: lightLeft3
+    400014: lightLeft4
+    400016: lightRight1
+    400018: lightRight10
+    400020: lightRight11
+    400022: lightRight12
+    400024: lightRight2
+    400026: lightRight3
+    400028: lightRight4
+    400030: lightRight5
+    400032: lightRight6
+    400034: lightRight7
+    400036: lightRight8
+    400038: lightRight9
+    400040: lights
+    400042: right
+    400044: transform45
+    400046: transform46
+    400048: transform47
+    400050: transform48
+    400052: transform49
+    400054: transform50
+    400056: transform51
+    400058: transform52
+    400060: transform53
+    400062: transform54
+    400064: transform55
+    400066: transform56
+    400068: transform57
+    400070: transform58
+    400072: transform59
+    400074: transform60
+    2100000: Lights
+    2300000: floorCornerRight_lights
+    3300000: floorCornerRight_lights
+    4300000: floorCornerRight_lights
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lights
+    second: {fileID: 2100000, guid: f49019b14e7b5a44ebbba9ffb5050c65, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
