@@ -28792,6 +28792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTransform: {fileID: 0}
+  crash: {fileID: 8300000, guid: fa50026817e9fc742ad902aefe4c5aeb, type: 3}
   shakeDuration: 1
   shakeAmount: 0.05
   decreaseFactor: 1
