@@ -177,10 +177,10 @@ public class Inventory : MonoBehaviour
             ydriveButton.SetActive(false);
         }
 
-        /*if (Input.GetKeyDown("p"))
+        /*if (Input.GetKeyDown("p")) //For debug purposes only, testing lose state
         {
             oxygenRemaining = 5;
-        } */
+        }*/
 
         if (Input.GetKeyDown(KeyCode.Backspace))
         {

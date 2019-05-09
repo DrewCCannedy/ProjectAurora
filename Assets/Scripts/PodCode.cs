@@ -77,10 +77,10 @@ public class PodCode : MonoBehaviour
             whiteScreen.CrossFadeAlpha(1, 1, false);
         }
 
-        if (Input.GetKeyDown("o"))
+        /*if (Input.GetKeyDown("o")) //For debug purposes only, testing win state
         {
             winState = true;
-        }
+        }*/ 
 
         if (subtitleSystem.playWinState == false && winState == true)
         {
