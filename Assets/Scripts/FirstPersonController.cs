@@ -267,6 +267,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_MouseLook.SetCursorLock(false);
                 //m_MouseLook.lockCursor = false;
             }
+            if (player.GetComponent<Inventory>().oxygenRemaining < 1 || keypad.GetComponent<PodCode>().winState == true || Input.GetKeyDown(KeyCode.Backspace))
+            {
+                m_MouseLook.SetCursorLock(false);
+            }
         }
 
 

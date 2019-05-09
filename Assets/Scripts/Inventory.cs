@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
@@ -28,7 +29,8 @@ public class Inventory : MonoBehaviour
     public Image blackScreen;
 
     [SerializeField]
-    int oxygenRemaining = 360;
+    public int oxygenRemaining = 360;
+    int fadeTimer = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +50,7 @@ public class Inventory : MonoBehaviour
         if (oxygenRemaining == 90 && hasSpacesuit) {
             subtitleSystem.play90 = true;
         }
-        if (oxygenRemaining == 270 && hasSpacesuit) {
+        if (oxygenRemaining == 180 && hasSpacesuit) {
             subtitleSystem.play270 = true;
         }
         if (Input.GetKeyDown("i") && keypad.GetComponent<PodCode>().keypadMode == false) //I key enters inventory mode
@@ -174,6 +176,22 @@ public class Inventory : MonoBehaviour
         {
             ydriveButton.SetActive(false);
         }
+
+        /*if (Input.GetKeyDown("p"))
+        {
+            oxygenRemaining = 5;
+        } */
+
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        if (fadeTimer == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+
     }
 
     void DecreaseOxygen()
@@ -187,7 +205,8 @@ public class Inventory : MonoBehaviour
         if (oxygenRemaining < 1)
         {
             black.SetActive(true);
-            blackScreen.CrossFadeAlpha(1, 2, false);
+            fadeTimer -= 1;
+            blackScreen.CrossFadeAlpha(1, 1, false);
             Debug.Log("Oxygen depleted. Game over.");
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PodCode : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class PodCode : MonoBehaviour
     public bool winState;
     public Image whiteScreen;
     public GameObject white;
+    int fadeTimer = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -72,7 +74,17 @@ public class PodCode : MonoBehaviour
         if (winState == true)
         {
             white.SetActive(true);
-            whiteScreen.CrossFadeAlpha(1, 2, false);
+            whiteScreen.CrossFadeAlpha(1, 1, false);
+        }
+
+        if (Input.GetKeyDown("o"))
+        {
+            winState = true;
+        }
+
+        if (subtitleSystem.playWinState == false && winState == true)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
@@ -203,10 +215,14 @@ public class PodCode : MonoBehaviour
         {
             if (code == correctCode)
             {
+                subtitleSystem.playWinState = true;
                 keypadText.text = ("Access Granted");
                 //podDoor.SetActive(false);
-                subtitleSystem.playWinState = true;
                 winState = true;
+                if (subtitleSystem.playWinState == false)
+                {
+                    SceneManager.LoadScene(0);
+                }
             }
             else
             {
