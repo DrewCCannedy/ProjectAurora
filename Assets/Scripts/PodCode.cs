@@ -45,6 +45,7 @@ public class PodCode : MonoBehaviour
         bDel.onClick.AddListener(Delete);
         bEnter.onClick.AddListener(EnterCode);
         invis.onClick.AddListener(CloseCurrentPanel);
+        whiteScreen.canvasRenderer.SetAlpha(0.0f);
     }
 
     // Update is called once per frame
@@ -71,7 +72,7 @@ public class PodCode : MonoBehaviour
         if (winState == true)
         {
             white.SetActive(true);
-            //whiteScreen.CrossFadeAlpha(1.0f, time, false);
+            whiteScreen.CrossFadeAlpha(1, 2, false);
         }
     }
 
@@ -203,7 +204,7 @@ public class PodCode : MonoBehaviour
             if (code == correctCode)
             {
                 keypadText.text = ("Access Granted");
-                podDoor.SetActive(false);
+                //podDoor.SetActive(false);
                 subtitleSystem.playWinState = true;
                 winState = true;
             }

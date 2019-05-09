@@ -24,6 +24,9 @@ public class Inventory : MonoBehaviour
     public Button invis;
     GameObject keypad;
 
+    public GameObject black;
+    public Image blackScreen;
+
     [SerializeField]
     int oxygenRemaining = 360;
 
@@ -33,6 +36,7 @@ public class Inventory : MonoBehaviour
         InvokeRepeating("DecreaseOxygen", 1.0f, 1.0f);
         invis.onClick.AddListener(CloseCurrentPanel);
         keypad = GameObject.FindWithTag("Keypad"); //Needs to keep track of keypad so both panels are not open at the same time
+        blackScreen.canvasRenderer.SetAlpha(0.0f);
     }
 
     // Update is called once per frame
@@ -182,7 +186,8 @@ public class Inventory : MonoBehaviour
 
         if (oxygenRemaining < 1)
         {
-            //Lose state
+            black.SetActive(true);
+            blackScreen.CrossFadeAlpha(1, 2, false);
             Debug.Log("Oxygen depleted. Game over.");
         }
     }
