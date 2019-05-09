@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PodCode : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class PodCode : MonoBehaviour
     public bool winState;
     public Image whiteScreen;
     public GameObject white;
+    int fadeTimer = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,7 @@ public class PodCode : MonoBehaviour
         bDel.onClick.AddListener(Delete);
         bEnter.onClick.AddListener(EnterCode);
         invis.onClick.AddListener(CloseCurrentPanel);
+        whiteScreen.canvasRenderer.SetAlpha(0.0f);
     }
 
     // Update is called once per frame
@@ -71,7 +74,17 @@ public class PodCode : MonoBehaviour
         if (winState == true)
         {
             white.SetActive(true);
-            whiteScreen.CrossFadeAlpha(1.0f, time, false);
+            whiteScreen.CrossFadeAlpha(1, 1, false);
+        }
+
+        if (Input.GetKeyDown("o"))
+        {
+            winState = true;
+        }
+
+        if (subtitleSystem.playWinState == false && winState == true)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
@@ -82,7 +95,7 @@ public class PodCode : MonoBehaviour
             code = code + "0";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad0);
+            GetComponent<AudioSource>().PlayOneShot(keypad0);
         }
     }
 
@@ -93,7 +106,7 @@ public class PodCode : MonoBehaviour
             code = code + "1";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad1);
+            GetComponent<AudioSource>().PlayOneShot(keypad1);
 
         }
     }
@@ -105,7 +118,7 @@ public class PodCode : MonoBehaviour
             code = code + "2";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad2);
+            GetComponent<AudioSource>().PlayOneShot(keypad2);
         }
     }
 
@@ -116,7 +129,7 @@ public class PodCode : MonoBehaviour
             code = code + "3";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad3);
+            GetComponent<AudioSource>().PlayOneShot(keypad3);
         }
     }
 
@@ -127,7 +140,7 @@ public class PodCode : MonoBehaviour
             code = code + "4";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad4);
+            GetComponent<AudioSource>().PlayOneShot(keypad4);
         }
     }
 
@@ -138,7 +151,7 @@ public class PodCode : MonoBehaviour
             code = code + "5";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad5);
+            GetComponent<AudioSource>().PlayOneShot(keypad5);
         }
     }
 
@@ -149,7 +162,7 @@ public class PodCode : MonoBehaviour
             code = code + "6";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad6);
+            GetComponent<AudioSource>().PlayOneShot(keypad6);
         }
     }
 
@@ -160,7 +173,7 @@ public class PodCode : MonoBehaviour
             code = code + "7";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad7);
+            GetComponent<AudioSource>().PlayOneShot(keypad7);
         }
     }
 
@@ -171,7 +184,7 @@ public class PodCode : MonoBehaviour
             code = code + "8";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad8);
+            GetComponent<AudioSource>().PlayOneShot(keypad8);
         }
     }
 
@@ -182,7 +195,7 @@ public class PodCode : MonoBehaviour
             code = code + "9";
             Debug.Log(code);
             keypadText.text = code;
-            transform.parent.gameObject.GetComponent<AudioSource>().PlayOneShot(keypad9);
+            GetComponent<AudioSource>().PlayOneShot(keypad9);
         }
     }
 
@@ -202,10 +215,14 @@ public class PodCode : MonoBehaviour
         {
             if (code == correctCode)
             {
-                keypadText.text = ("Access Granted");
-                podDoor.SetActive(false);
                 subtitleSystem.playWinState = true;
+                keypadText.text = ("Access Granted");
+                //podDoor.SetActive(false);
                 winState = true;
+                if (subtitleSystem.playWinState == false)
+                {
+                    SceneManager.LoadScene(0);
+                }
             }
             else
             {

@@ -17,8 +17,8 @@ public class ShakeDelay : MonoBehaviour
     {
         while (true)
         {
-      //      CameraShake;
-           // Debug.Log("Shake");
+            
+            Debug.Log("Shake");
             yield return new WaitForSeconds(5);
         }
     }
